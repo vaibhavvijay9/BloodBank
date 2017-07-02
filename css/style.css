@@ -67,6 +67,12 @@ main {
     margin-left: 10%;
 }
 
+#aboutUs {
+    margin: 3%;
+    margin-left: 10%;
+    width: 50%;
+}
+
 iframe {
     float: right;
 }
@@ -101,4 +107,9 @@ span#modalFoot {
 
 .iconColor {
     color: #fff;
+}
+
+.bloodIcon {
+    width: inherit;
+    height: 28px;
 }

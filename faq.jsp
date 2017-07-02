@@ -3,8 +3,8 @@
         <li class="tab"><a href="index.jsp"><i class="material-icons">home</i>Home</a></li>
         <li class="tab"><a href="aboutUs.jsp"><i class="material-icons">info</i>About Us</a></li>
         <li class="tab"><a href="contactUs.jsp"><i class="material-icons">contact_mail</i>Contact Us</a></li>
-        <li class="tab"><a href="feedback.jsp"><i class="material-icons">comment</i>Feedback</a></li>
-        <li class="tab"><a class="active" href="inquiry.jsp"><i class="material-icons">info</i>Inquiry</a></li>
+        <li class="tab"><a href="inquiry.jsp"><i class="material-icons">info</i>Inquiry</a></li>
+        <li class="tab"><a class="active" href="faq.jsp"><i class="material-icons">question_answer</i>FAQ</a></li>
     </ul>
     </div>
     <div class="nav-content">
@@ -12,8 +12,8 @@
             <li class="tab"><a href="index.jsp" target="_self">Home</a></li>
             <li class="tab"><a href="aboutUs.jsp" target="_self">About Us</a></li>
             <li class="tab"><a href="contactUs.jsp" target="_self">Contact Us</a></li>
-            <li class="tab"><a href="feedback.jsp" target="_self">Feedback</a></li>
-            <li class="tab"><a class="active" href="inquiry.jsp" target="_self">Inquiry</a></li>
+            <li class="tab"><a href="inquiry.jsp" target="_self">Inquiry</a></li>
+            <li class="tab"><a class="active" href="faq.jsp" target="_self">FAQ</a></li>
         </ul>
     </div>
     </nav>
@@ -26,16 +26,24 @@
         <br><br>
         <ul class="collapsible popout" data-collapsible="accordion">
             <li>
-                <div class="collapsible-header iconColor" id="faqColor"><i class="material-icons">favorite</i>First</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-header iconColor" id="faqColor"><i class="material-icons">favorite</i> Who can donate blood?</div>
+                <div class="collapsible-body"><span>Any healthy person with clean habits between the age of 18 to 65 can donate blood.</span></div>
             </li>
             <li>
-                <div class="collapsible-header iconColor" id="faqColor"><i class="material-icons">favorite</i>Second</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-header iconColor" id="faqColor"><i class="material-icons">favorite</i> How much haemoglobin is required to donate blood?</div>
+                <div class="collapsible-body"><span>Donor's Hemoglobin level is 12.5% minimum.</span></div>
             </li>
             <li>
-                <div class="collapsible-header iconColor" id="faqColor"><i class="material-icons">favorite</i>Third</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-header iconColor" id="faqColor"><i class="material-icons">favorite</i> I have a tattoo. Am I allowed to donate blood?</div>
+                <div class="collapsible-body"><span>If you have just gotten your tattoo, you should defer donations for at least 12 months (unless disposable needles were used) and you'll need to inform the attending doctor/nurse.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header iconColor" id="faqColor"><i class="material-icons">favorite</i>How frequently I can donate blood?</div>
+                <div class="collapsible-body"><span>You can donate blood once in 3 months.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header iconColor" id="faqColor"><i class="material-icons">favorite</i>Advantage of blood donation for a donor?</div>
+                <div class="collapsible-body"><span>New blood cells will be generated after donation</span></div>
             </li>
         </ul>
     </div>
