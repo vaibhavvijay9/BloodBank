@@ -84,3 +84,21 @@ span#modalFoot {
 #loginAlign {
     text-align: center;
 }
+
+#userProfile {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+#profile {
+    text-align: center;
+}
+
+#faqColor {
+    background-color: #8064A2;
+}
+
+.iconColor {
+    color: #fff;
+}

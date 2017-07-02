@@ -27,12 +27,6 @@
                 </div>
             </div>
             <div class="col s12">
-                <span id="spanSize">Email</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-                <div class="input-field inline" id="fieldSpace">
-                    <input id="email" type="email" required="true" class="validate">
-                </div>
-            </div>
-            <div class="col s12">
                 <span id="spanSize">Address</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-field inline" id="fieldSpace">
                     <textarea id="icon_prefix2" class="materialize-textarea" required="true"></textarea>
