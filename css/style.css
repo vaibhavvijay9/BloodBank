@@ -1,0 +1,125 @@
+#navBar {
+    padding-bottom: 10%;
+}
+
+#slides {
+    position: relative;
+    height: 300px;
+    padding: 0px;
+    margin: 10px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+#carouselImg {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+#feedback {
+    width: 50%;
+    margin-top: 2%;
+}
+
+#feedbackBtn {
+    margin-left: 8%;
+}
+
+#inquiry {
+    width: 50%;
+    margin-top: 2%;
+}
+
+#inquiryBtn {
+    margin-left: 8%;
+}
+
+#contactDetails {
+    margin: 3%;
+    margin-left: 10%;
+}
+
+iframe {
+    float: right;
+}
+
+#modal1 {
+    width: 40%;
+    background-color: #E9E9E9;
+    overflow-y: hidden;
+}
+
+span#modalFoot {
+    float: right;
+}
+
+#loginAlign {
+    text-align: center;
+}
+
+#userProfile {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+#profile {
+    text-align: center;
+}
+
+.bloodIcon {
+    width: inherit;
+    height: 28px;
+}
+
+#resetBtn {
+    float: right;
+}
+
+#userNav {
+    height: 18%;
+}
+
+@media screen and (min-width: 1000px) {
+    #userLogoAlign {
+        margin-left: 30%;
+        margin-top: 2%;
+    }
+}
+
+#userLogoAlign {
+    align-content: center;
+}
+
+#userContent {
+    margin-left: 30%;
+    padding-top: 2%;
+}
