@@ -1,12 +1,4 @@
 <%@include file='Header.html' %>
-    <ul class="side-nav" id="mobile-demo">
-        <li class="tab"><a href="index.jsp"><i class="material-icons">home</i>Home</a></li>
-        <li class="tab"><a href="aboutUs.jsp"><i class="material-icons">info</i>About Us</a></li>
-        <li class="tab"><a href="contactUs.jsp"><i class="material-icons">contact_mail</i>Contact Us</a></li>
-        <li class="tab"><a href="inquiry.jsp"><i class="material-icons">info</i>Inquiry</a></li>
-        <li class="tab"><a href="faq.jsp"><i class="material-icons">question_answer</i>FAQ</a></li>
-    </ul>
-    </div>
     <div class="nav-content">
         <ul class="hide-on-med-and-down tabs tabs-transparent">
             <li class="tab"><a href="index.jsp" target="_self">Home</a></li>
@@ -17,6 +9,7 @@
         </ul>
     </div>
     </nav>
+    </div>
     </div>
     <!--NavBar Ends-->
 
@@ -39,7 +32,10 @@
                             <input id="password" type="password" name="password" required="true" class="validate">
                             <label for="password">Password</label>
                         </div>
+                        <span>wrong username or password</span>
+                        <span id="modalFoot">Forgot Password?</span>
                     </div>
+
                     <div>
                         <span><a href="Registration.jsp">Create Account</a></span>
                         <span id="modalFoot"><button type="submit" class="modal-action waves-effect waves-green btn-flat">NEXT</button></span>
