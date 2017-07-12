@@ -13,18 +13,47 @@
     </div>
     <!--NavBar Ends-->
 
-
-    <!--Carousel Begin-->
-    <div>
-        <ul id="slides">
-            <li class="slide showing"><img id="carouselImg" src="images/Q1.jpg"></li>
-            <li class="slide"><img id="carouselImg" src="images/Q3.jpg"></li>
-            <li class="slide"><img id="carouselImg" src="images/Q4.jpg"></li>
-            <li class="slide"><img id="carouselImg" src="images/Q6.jpg"></li>
+    <div class="slider" id="mySlider">
+        <ul class="slides">
+            <li><img class="sliderImg" src="images/Q1.jpg"></li>
+            <li><img class="sliderImg" src="images/Q3.jpg"></li>
+            <li><img class="sliderImg" src="images/Q4.jpg"></li>
+            <li><img class="sliderImg" src="images/Q6.jpg"></li>
         </ul>
     </div>
 
-
+    <div id="homeContent">
+        <div class="homeWidth center bloodDonor">
+            <div class="center">
+                <h4>Top Blood Donors</h4>
+            </div>
+            <div class="logoWatermark">
+                <marquee direction="down">
+                    Hello<br> vaibhav vijay<br>
+                </marquee>
+            </div>
+        </div>
+        <div class="homeWidth center inspStories">
+            <div class="center">
+                <h4>Inspiring Stories</h4>
+            </div>
+            <div class="logoWatermark">
+                <marquee direction="down">
+                    Hello<br> vaibhav vijay<br>
+                </marquee>
+            </div>
+        </div>
+        <div class="homeWidth center upActivities">
+            <div class="center">
+                <h4>Upcoming Activities</h4>
+            </div>
+            <div class="logoWatermark">
+                <marquee direction="down">
+                    Hello<br> vaibhav vijay<br>
+                </marquee>
+            </div>
+        </div>
+    </div>
 
     <%@include file='Footer.html' %>
         <script src="js/index.js"></script>

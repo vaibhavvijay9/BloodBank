@@ -6,17 +6,6 @@
     height: 18%;
 }
 
-@media screen and (min-width: 1000px) {
-    #userLogoAlign {
-        margin-left: 30%;
-        margin-top: 2%;
-    }
-}
-
-#userLogoAlign {
-    align-content: center;
-}
-
 #userContent {
     margin-left: 30%;
     padding-top: 2%;
@@ -48,4 +37,18 @@ u {
 #changePassword {
     width: 50%;
     margin-top: 2%;
+}
+
+#profilePic {
+    background-color: lightblue;
+    font-size: 3em;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: block;
+}
+
+#align {
+    margin: auto;
 }

@@ -8,42 +8,59 @@
 
 #navWidth {
     width: 100%;
+    margin-left: 3%;
+}
+
+#navLogo {
+    margin: 0.5%;
 }
 
 .brand-logo {
-    padding-left: 100px;
+    padding-left: 22px !important;
 }
 
-#slides {
-    position: relative;
-    height: 300px;
-    padding: 0px;
-    margin: 10px;
-    list-style-type: none;
+#mySlider {
+    margin-top: 1%;
+    width: 90%;
+    margin-left: 5%;
 }
 
-.slide {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 1;
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
+.indicator-item.active {
+    background-color: #FF000D !important;
 }
 
-.showing {
-    opacity: 1;
-    z-index: 2;
+#homeContent {
+    display: flex;
 }
 
-#carouselImg {
-    width: 75%;
-    margin-left: 12.5%;
+.homeWidth {
+    width: 33.3%;
+    height: 70%;
+    border: 4px solid #F29599;
+    border-radius: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.bloodDonor {
+    margin-left: 1%;
+}
+
+.inspStories {
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+.upActivities {
+    margin-right: 1%;
+}
+
+.logoWatermark {
+    background: url("../images/250x250.png");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-weight: 800;
 }
 
 body {
