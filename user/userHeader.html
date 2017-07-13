@@ -2,6 +2,8 @@
 
 <head>
     <title>Blood Bank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,15 +11,16 @@
 </head>
 
 <body>
-    <nav class="nav-extended" id="userNav">
+    <nav class="top-nav" id="userNav">
         <div class="nav-wrapper">
-            <img id="userContent" src="../images/100x100.png">
-            <a href="#" class="brand-logo center">Logo</a>
-            <ul class="right">
-                <li><a href="sass.html"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;Sign Out</a></li>
-            </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-
+            <div class="container">
+                <img id="userContent" src="../images/100x100.png">
+                <a href="#" class="brand-logo left">Logo</a>
+                <ul class="right">
+                    <li><a href="sass.html"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;Sign Out</a></li>
+                </ul>
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
         </div>
 
         <ul id="slide-out" class="side-nav fixed">
@@ -46,6 +49,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <script src="js/index.js"></script>
+
 </body>
 
 </html>

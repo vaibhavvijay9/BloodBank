@@ -2,15 +2,24 @@
     float: right;
 }
 
+.top-nav {
+    padding-left: 200px;
+}
+
 #userNav {
     height: 18%;
 }
 
-#userContent {
+main {
+    padding-left: 30%;
+}
+
+
+/*#userContent {
     margin-left: 30%;
     padding-top: 2%;
     margin-right: 10%;
-}
+}*/
 
 #fieldSpace {
     margin-left: 10%;
@@ -51,4 +60,8 @@ u {
 
 #align {
     margin: auto;
+}
+
+.top-nav {
+    position: relative;
 }
