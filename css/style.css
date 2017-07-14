@@ -113,27 +113,16 @@ iframe {
 
 .modal {
     width: 31%;
-    max-height: 74%;
-    background-color: #E9E9E9;
+    max-height: 70%;
     overflow-y: hidden;
-}
-
-span#modalFoot {
-    float: right;
-}
-
-#loginAlign {
-    text-align: center;
+    background-color: #E9E9E9;
+    color: #000;
 }
 
 #userProfile {
     border-radius: 100%;
     width: 150px;
     height: 150px;
-}
-
-#profile {
-    text-align: center;
 }
 
 #faqColor {
@@ -148,3 +137,22 @@ span#modalFoot {
     width: inherit;
     height: 28px;
 }
+
+span a {
+    color: #039be5 !important;
+}
+
+
+/*For Desktop*/
+
+@media screen and (min-width: 769px) {}
+
+
+/*For Tablet*/
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {}
+
+
+/*For Mobile*/
+
+@media only screen and (max-device-width: 480px) {}

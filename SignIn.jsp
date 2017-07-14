@@ -1,7 +1,7 @@
 <%@include file='index.jsp' %>
 
     <!-- Modal Structure -->
-    <div id="modal1" class="modal">
+    <!--<div id="modal1" class="modal">
         <div class="modal-content">
             <div id="profile"><img src="images/account_login.png" id="userProfile" /></div>
             <br>
@@ -30,4 +30,4 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div>-->

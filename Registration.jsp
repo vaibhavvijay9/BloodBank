@@ -72,7 +72,7 @@
             <button class="btn waves-effect waves-light" id="inquiryBtn" type="submit" name="action">Register
                     <i class="material-icons right">send</i>
                 </button>
-            <button class="btn waves-effect waves-light" id="resetBtn" type="reset">Reset
+            <button class="btn waves-effect waves-light right" id="resetBtn" type="reset">Reset
                     <i class="material-icons right">autorenew</i>
                 </button>
         </form>

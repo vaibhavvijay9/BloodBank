@@ -2,6 +2,8 @@
 
 <head>
     <title>People's Blood Bank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,8 +24,36 @@
                         <a href="#" class="brand-logo">People's Blood Bank</a>
                         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                         <ul id="nav-mobile" class="right ">
-                            <li><a href="SignIn.jsp"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;SignIn</a></li>
+                            <li><a href="#modal1"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;SignIn</a></li>
                         </ul>
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                                <div class="center"><img src="images/account_login.png" id="userProfile" /></div>
+                                <h5 class="center">Sign in</h5>
+                                <div class="row">
+                                    <form class="col s12" name="myForm" onsubmit="return validate()">
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <i class="material-icons prefix">mail</i>
+                                                <input id="email" type="email" name="email" required="true" class="validate">
+                                                <label for="email">Email</label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <i class="material-icons prefix">lock_open</i>
+                                                <input id="password" type="password" name="password" required="true" class="validate">
+                                                <label for="password">Password</label>
+                                            </div>
+                                            <div class="col s12">
+                                                <span></span>
+                                                <span class="right"><a href="Registration.jsp">Forgot Password?</a></span>
+                                            </div>
+                                            <span><a href="Registration.jsp">Create Account</a></span>
+                                            <span class="right"><button type="submit" class="modal-action waves-effect waves-green btn-flat">NEXT</button></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                         <ul class="side-nav" id="mobile-demo">
                             <li class="tab"><a class="active" href="index.jsp"><i class="material-icons">home</i>Home</a></li>
                             <li class="tab"><a href="aboutUs.jsp"><i class="material-icons">info</i>About Us</a></li>
