@@ -35,6 +35,10 @@
         margin-top: 2%;
         margin-left: 0% !important;
     }
+    .reg-dimension {
+        width: 80%;
+        margin-left: 0% !important;
+    }
     .table-width {
         width: 70%;
     }
@@ -60,10 +64,12 @@
     margin-left: 10%;
 }
 
-input.select-dropdown {
-    height: 2rem !important;
+.bloodIcon {
+    width: inherit;
+    height: 28px;
 }
 
-textarea.inputHeight {
-    min-height: 2rem !important;
+.modal {
+    width: 31%;
+    max-height: 74%;
 }

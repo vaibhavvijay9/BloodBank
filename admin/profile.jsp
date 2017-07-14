@@ -1,4 +1,4 @@
-<%@include file="userHeader.html" %>
+<%@include file="adminHeader.html" %>
     <main>
         <div>
             <a class="right" href="editProfile.jsp" style="padding-right:10%;"><i class="material-icons prefix">mode_edit</i>Edit</a>

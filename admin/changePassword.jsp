@@ -1,4 +1,4 @@
-<%@include file="userHeader.html" %>
+<%@include file="adminHeader.html" %>
     <main>
         <div class="row" id="mainContent">
             <h4 class="left">Change Password</h4>
