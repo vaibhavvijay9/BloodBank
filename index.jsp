@@ -12,20 +12,36 @@
     </div>
     </div>
     <!--NavBar Ends-->
-
-    <div class="slider" id="mySlider">
-        <ul class="slides">
-            <li><img class="sliderImg" src="images/Q1.jpg"></li>
-            <li><img class="sliderImg" src="images/Q3.jpg"></li>
-            <li><img class="sliderImg" src="images/Q4.jpg"></li>
-            <li><img class="sliderImg" src="images/Q6.jpg"></li>
-        </ul>
+    <div class="slider-width">
+        <div class="slider hide-on-med-and-down" id="mySlider">
+            <ul class="slides">
+                <li><img src="images/Q1.jpg"></li>
+                <li><img src="images/Q3.jpg"></li>
+                <li><img src="images/Q4.jpg"></li>
+                <li><img src="images/Q6.jpg"></li>
+            </ul>
+        </div>
+        <div class="center activity-content">
+            <div class="center activity-head">
+                Upcoming Activities
+            </div>
+            <marquee direction="down">
+                Hello<br> vaibhav vijay<br>
+            </marquee>
+        </div>
     </div>
-
     <div id="homeContent">
-        <div class="homeWidth center bloodDonor">
-            <div class="center">
-                <h4>Top Blood Donors</h4>
+        <div class=" center story-content">
+            <div class="center story-head">
+                Inspiring Stories
+            </div>
+            <marquee direction="down">
+                Hello<br> vaibhav vijay<br>
+            </marquee>
+        </div>
+        <div class=" center donor-content">
+            <div class="center donor-head">
+                Top Blood Donors
             </div>
             <div class="logoWatermark">
                 <marquee direction="down">
@@ -33,26 +49,8 @@
                 </marquee>
             </div>
         </div>
-        <div class="homeWidth center inspStories">
-            <div class="center">
-                <h4>Inspiring Stories</h4>
-            </div>
-            <div class="logoWatermark">
-                <marquee direction="down">
-                    Hello<br> vaibhav vijay<br>
-                </marquee>
-            </div>
-        </div>
-        <div class="homeWidth center upActivities">
-            <div class="center">
-                <h4>Upcoming Activities</h4>
-            </div>
-            <div class="logoWatermark">
-                <marquee direction="down">
-                    Hello<br> vaibhav vijay<br>
-                </marquee>
-            </div>
-        </div>
+
+
     </div>
 
     <%@include file='Footer.html' %>

@@ -14,8 +14,8 @@
     <!--NavBar Ends-->
 
     <br><br>
-    <div class="container">
-        <b>Frequently Asked Questions about Blood Donation</b>
+    <div class="faq-dimensions">
+        <b>&emsp;&emsp;Frequently Asked Questions about Blood Donation</b>
         <br><br>
         <ul class="collapsible popout" data-collapsible="accordion">
             <li>
@@ -23,7 +23,7 @@
                 <div class="collapsible-body"><span>Any healthy person with clean habits between the age of 18 to 65 can donate blood.</span></div>
             </li>
             <li>
-                <div class="collapsible-header iconColor" id="faqColor"><i class="material-icons">favorite</i> How much haemoglobin is required to donate blood?</div>
+                <div class="collapsible-header iconColor" id="faqColor"><i class="material-icons">favorite</i> How much haemoglobin is required to donate?</div>
                 <div class="collapsible-body"><span>Donor's Hemoglobin level is 12.5% minimum.</span></div>
             </li>
             <li>

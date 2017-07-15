@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel='stylesheet' type='text/css' href='css/style.css'>
     <link rel="icon" href="images/16x16.png" type="image/gif" sizes="16x16">
 </head>
@@ -16,14 +17,14 @@
         <!--NavBar Begin-->
         <div id="navBar">
             <nav class="nav-extended">
+                <a href="#" data-activates="mobile-demo" class="button-collapse left"><i class="material-icons">menu</i></a>
                 <div id="navLogo">
                     <img src="images/100x100.png">
                 </div>
                 <div id="navWidth">
                     <div class="nav-wrapper">
-                        <a href="#" class="brand-logo">People's Blood Bank</a>
-                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                        <ul id="nav-mobile" class="right ">
+                        <a href="#" class="brand-logo hide-on-med-and-down">People's Blood Bank</a>
+                        <ul class="right hide-on-med-and-down">
                             <li><a href="#modal1"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;SignIn</a></li>
                         </ul>
                         <div id="modal1" class="modal">
@@ -60,5 +61,7 @@
                             <li class="tab"><a href="contactUs.jsp"><i class="material-icons">contact_mail</i>Contact Us</a></li>
                             <li class="tab"><a href="inquiry.jsp"><i class="material-icons">info</i>Inquiry</a></li>
                             <li class="tab"><a href="faq.jsp"><i class="material-icons">question_answer</i>FAQ</a></li>
+                            <li><a href="#modal1"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;SignIn</a></li>
+                        </ul>
                         </ul>
                     </div>

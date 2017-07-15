@@ -20,6 +20,10 @@
     width: 150px !important;
 }
 
+body {
+    background-color: #FDF7E1;
+}
+
 @media screen and (min-width: 769px) {
     main {
         margin-left: 30%;
@@ -41,6 +45,9 @@
     }
     .table-width {
         width: 70%;
+    }
+    .hide1 {
+        display: none;
     }
 }
 
