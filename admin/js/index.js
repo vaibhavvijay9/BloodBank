@@ -3,15 +3,20 @@ $(document).ready(function() {
 
     $('.datepicker').pickadate({
         selectMonths: true, // Creates a dropdown to control month
-        selectYears: 15 // Creates a dropdown of 15 years to control year
+        selectYears: 15, // Creates a dropdown of 15 years to control year
+        format: 'yyyy/mm/dd' //vv set the defined format vv
     });
 
-    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal();
+
+    var $input = $('.defaultDate').pickadate()
+    var date = $('.defaultDate').val();
+    // Use the picker object directly.
+    var picker = $input.pickadate('picker')
+        // Using a string along with the parsing format (defaults to `format` option).
+    picker.set('select', date, { format: 'yyyy/mm/dd' })
 
 
 });
-
 // Initialize collapse button
 $(".button-collapse").sideNav();
 // Initialize collapsible (uncomment the line below if you use the dropdown variation)

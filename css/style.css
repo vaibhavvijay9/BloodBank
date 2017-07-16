@@ -229,3 +229,27 @@ span a {
         height: 50%;
     }
 }
+
+.placeColor ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #8B8B8B;
+}
+
+.placeColor ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #8B8B8B;
+}
+
+.placeColor :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #8B8B8B;
+}
+
+.placeColor :-moz-placeholder {
+    /* Firefox 18- */
+    color: #8B8B8B;
+}
+
+marquee {
+    height: 85%;
+}

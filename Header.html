@@ -32,17 +32,16 @@
                                 <div class="center"><img src="images/account_login.png" id="userProfile" /></div>
                                 <h5 class="center">Sign in</h5>
                                 <div class="row">
-                                    <form class="col s12" name="myForm" onsubmit="return validate()">
+                                    <form class="col s12 placeColor" name="myForm" action="loginDone.jsp" method="post" onsubmit="return validate()">
                                         <div class="row">
                                             <div class="input-field col s12">
                                                 <i class="material-icons prefix">mail</i>
-                                                <input id="email" type="email" name="email" required="true" class="validate">
-                                                <label for="email">Email</label>
+                                                <input id="email" type="email" name="email" required class="validate" placeholder="Email">
+
                                             </div>
                                             <div class="input-field col s12">
                                                 <i class="material-icons prefix">lock_open</i>
-                                                <input id="password" type="password" name="password" required="true" class="validate">
-                                                <label for="password">Password</label>
+                                                <input id="password" type="password" name="password" required class="validate" placeholder="Password">
                                             </div>
                                             <div class="col s12">
                                                 <span></span>
