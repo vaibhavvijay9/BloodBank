@@ -1,8 +1,8 @@
 <%@include file='adminHeader.html' %>
     <main>
-        <div class="row reg-dimensions">
+        <div class="row reg-dimension">
             <div class="row">
-                <a class="right" href="manageCamp.jsp" style="padding:2% 10% 0% 0%;"><i class="material-icons right">settings</i>Manage</a>
+                <a class="right" href="manageCamp.jsp" style="padding:2% 0% 0% 0%;"><i class="material-icons right">settings</i>Manage</a>
                 <h4 class="left">Register Camp</h4>
             </div>
             <table class="table-width">

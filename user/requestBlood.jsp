@@ -8,43 +8,24 @@
             <table class="table-width">
                 <tr>
                     <td class="firstCol">Name</td>
-                    <td><input class="inputHeight" value="Vaibhav Vijay" type="text"></td>
+                    <td><input class="inputHeight" type="text" placeholder="Patient's Name"></td>
                 </tr>
                 <tr>
-                    <td class="firstCol">Gender</td>
+                    <td class="firstCol">Date</td>
                     <td>
-                        <select>
-                            <option value="" disabled selected>Gender</option>
-                            <option value="1">Male</option>
-                            <option value="2">Female</option>
-                            <option value="3">Other</option>
-                        </select>
+                        <input type="date" class="datepicker inputHeight" placeholder="When Required">
                     </td>
                 </tr>
                 <tr>
-                    <td class="firstCol">BirthDate</td>
-                    <td>
-                        <input type="date" class="datepicker inputHeight" placeholder="09/05/1997">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="firstCol">Email</td>
-                    <td><input type="email" required class="validate inputHeight" value="vaibhavvijay9@gmail.com"></td>
-                </tr>
-                <tr>
-                    <td class="firstCol">Address</td>
-                    <td><textarea class="materialize-textarea inputHeight" required>95,Adarsh Nagar</textarea></td>
-                </tr>
-                <tr>
-                    <td class="firstCol">Contact</td>
-                    <td><input class="inputHeight" type="text" required maxlength="10" value="8104410854" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <td class="firstCol">Units</td>
+                    <td><input class="inputHeight" type="text" required maxlength="2" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="When Required">
                     </td>
                 </tr>
                 <tr>
                     <td class="firstCol">BloodGroup</td>
                     <td>
                         <select>
-                            <option value="" disabled selected>Blood Group</option>
+                            <option value="" disabled selected>Select</option>
                             <option value="1">A<sup>+</sup></option>
                             <option value="2">B<sup>+</sup></option>
                             <option value="3">O<sup>+</sup></option>
@@ -52,10 +33,14 @@
                     </td>
                 </tr>
                 <tr>
+                    <td class="firstCol">Hospital Name</td>
+                    <td><input class="inputHeight" type="text"></td>
+                </tr>
+                <tr>
                     <td>
                     </td>
                     <td>
-                        <button class="btn waves-effect waves-light right" type="submit">Save
+                        <button class="btn waves-effect waves-light right" type="submit">Submit
                         <i class="material-icons right">send</i>
                     </td>
                 </tr>

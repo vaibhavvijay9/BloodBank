@@ -24,15 +24,15 @@ body {
     background-color: #FDF7E1;
 }
 
-@media screen and (min-width: 769px) {
+
+/*For Desktop*/
+
+@media screen and (min-width: 993px) {
     main {
-        margin-left: 30%;
+        margin-left: 340px;
     }
     .navWidth {
-        padding-left: 15%;
-    }
-    #imgAlign {
-        margin-left: 10%;
+        padding-left: 300px;
     }
     #mainContent {
         width: 50%;
@@ -40,7 +40,7 @@ body {
         margin-left: 0% !important;
     }
     .reg-dimension {
-        width: 80%;
+        width: 90%;
         margin-left: 0% !important;
     }
     .table-width {
@@ -50,12 +50,35 @@ body {
         display: none;
     }
     .largeTable {
-        margin-left: 25%;
-        margin-right: 5%;
+        margin-left: 320px;
+        margin-right: 20px;
+    }
+    .dash-border {
+        width: 30%;
+        height: 30%;
+        margin: 3%;
+        text-align: center;
+        background: #84DCCF;
+        color: #ffffff;
+    }
+    .dashBoardHead {
+        font-size: 1.7em;
+    }
+    .dashBoardValue {
+        font-size: 6em;
+    }
+    .dashboard-desktop {
+        display: flex;
+    }
+    .dashboard-mobile {
+        display: none;
     }
 }
 
-@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+
+/*For Tablet*/
+
+@media screen and (min-device-width: 481px) and (max-device-width: 992px) {
     main {
         margin-left: 15%;
     }
@@ -64,9 +87,32 @@ body {
     }
 }
 
+
+/*For Mobile*/
+
 @media only screen and (max-device-width: 480px) {
     main {
         margin-left: 2%;
+    }
+    .dashboard-desktop {
+        display: none;
+    }
+    .dashboard-mobile {
+        display: flex;
+    }
+    .dash-border {
+        height: 200px;
+        max-width: 200px;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+    .dashBoardHead {
+        font-size: 1.7em;
+        height: 50px;
+    }
+    .dashBoardValue {
+        font-size: 4em;
     }
 }
 
