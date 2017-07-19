@@ -8,14 +8,38 @@ $(document).ready(function() {
 
 });
 
-function ValidateEmail(inputText) {
+//email validation
+var email = document.getElementById("email1");
+
+function ValidateEmail() {
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (inputText.value.match(mailformat)) {
-        document.registerForm.email.focus();
+    console.log(email);
+    if (email.value.match(mailformat)) {
+        $('#errorMessage').hide();
         return true;
     } else {
-        $('#errorMessage').append("*Invalid email address");
-        document.registerForm.email.focus();
+        $('#errorMessage').text("*Invalid email address");
+        $('#errorMessage').show();
         return false;
     }
 }
+
+
+//password validation
+var password = document.getElementById("password1");
+var confirm_password = document.getElementById("confirm_password");
+
+function validatePassword() {
+    if (password.value != confirm_password.value) {
+        $('#passwordError').text("*Passwords Don't Match");
+        $('#passwordError').show();
+        return false;
+    } else {
+        $('#passwordError').hide();
+        return true;
+    }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+email.onkeyup = ValidateEmail;

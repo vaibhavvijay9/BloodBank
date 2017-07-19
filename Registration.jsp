@@ -35,18 +35,20 @@
                 </div>
                 <div class="input-field col s12">
                     <i class="material-icons prefix">mail</i>
-                    <input type="text" name="email">
+                    <input id="email1" type="text" name="email">
+                    <!-- <label for="email">Email (Username)</label> -->
                     <a id="errorMessage" class="right"></a>
                 </div>
                 <div class="input-field col s12">
                     <i class="fa fa-key small prefix"></i>
-                    <input id="password" type="password" class="validate">
-                    <label for="password">Password</label>
+                    <input id="password1" type="password" class="validate">
+                    <label for="password1">Password</label>
                 </div>
                 <div class="input-field col s12">
                     <i class="fa fa-check-circle-o small prefix"></i>
-                    <input id="password" type="password" class="validate">
-                    <label for="password">Confirm Password</label>
+                    <input id="confirm_password" type="password" class="validate">
+                    <label for="confirm_password">Confirm Password</label>
+                    <a id="passwordError" class="right"></a>
                 </div>
                 <div class="input-field col s12">
                     <i class="material-icons prefix">location_on</i>
@@ -70,7 +72,7 @@
             </div>
             <!-- <input type="submit" name="submit" value="Submit" onclick="return ValidateEmail(document.registerForm.email)" /> -->
 
-            <button class="btn waves-effect waves-light" id="inquiryBtn" type="submit" onclick="return ValidateEmail(document.registerForm.email)">Register
+            <button class="btn waves-effect waves-light" id="inquiryBtn" type="submit">Register
                     <i class="material-icons right">send</i>
                 </button>
             <button class="btn waves-effect waves-light right" id="resetBtn" type="reset">Reset

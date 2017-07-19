@@ -254,6 +254,7 @@ marquee {
     height: 85%;
 }
 
-#errorMessage {
+#errorMessage,
+#passwordError {
     color: red;
 }
