@@ -11,10 +11,9 @@
     </div>
     </div>
     <!--NavBar Ends-->
-
     <div class="row" id="inquiry">
         <h3 id="loginAlign">Registration</h3>
-        <form class="col s12">
+        <form class="col s12" name="registerForm" action="#">
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">account_circle</i>
@@ -36,8 +35,8 @@
                 </div>
                 <div class="input-field col s12">
                     <i class="material-icons prefix">mail</i>
-                    <input id="email" type="email" required="true" class="validate">
-                    <label for="email">Email</label>
+                    <input type="text" name="email">
+                    <a id="errorMessage" class="right"></a>
                 </div>
                 <div class="input-field col s12">
                     <i class="fa fa-key small prefix"></i>
@@ -69,7 +68,9 @@
                         </select>
                 </div>
             </div>
-            <button class="btn waves-effect waves-light" id="inquiryBtn" type="submit" name="action">Register
+            <!-- <input type="submit" name="submit" value="Submit" onclick="return ValidateEmail(document.registerForm.email)" /> -->
+
+            <button class="btn waves-effect waves-light" id="inquiryBtn" type="submit" onclick="return ValidateEmail(document.registerForm.email)">Register
                     <i class="material-icons right">send</i>
                 </button>
             <button class="btn waves-effect waves-light right" id="resetBtn" type="reset">Reset

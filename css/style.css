@@ -253,3 +253,7 @@ span a {
 marquee {
     height: 85%;
 }
+
+#errorMessage {
+    color: red;
+}
