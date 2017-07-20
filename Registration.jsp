@@ -13,7 +13,7 @@
     <!--NavBar Ends-->
     <div class="row" id="inquiry">
         <h3 id="loginAlign">Registration</h3>
-        <form class="col s12" name="registerForm" action="#">
+        <form class="col s12" name="registerForm" action="#" onsubmit="return validate()">
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">account_circle</i>
