@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('.datepicker').pickadate({
         selectMonths: true, // Creates a dropdown to control month
         selectYears: 15, // Creates a dropdown of 15 years to control year
-        format: 'yyyy/mm/dd' //vv set the defined format vv
+        format: 'yyyy-mm-dd' //vv set the defined format vv
     });
 
 
@@ -13,7 +13,7 @@ $(document).ready(function() {
     // Use the picker object directly.
     var picker = $input.pickadate('picker')
         // Using a string along with the parsing format (defaults to `format` option).
-    picker.set('select', date, { format: 'yyyy/mm/dd' })
+    picker.set('select', date, { format: 'yyyy-mm-dd' })
 
 
 });

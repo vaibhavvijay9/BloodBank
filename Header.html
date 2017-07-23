@@ -15,45 +15,18 @@
 <body>
     <main>
         <!--NavBar Begin-->
-        <div id="navBar">
+        <div>
             <nav class="nav-extended">
                 <a href="#" data-activates="mobile-demo" class="button-collapse left"><i class="material-icons">menu</i></a>
-                <div id="navLogo">
+                <div>
                     <img src="images/100x100.png">
                 </div>
                 <div id="navWidth">
                     <div class="nav-wrapper">
                         <a href="#" class="brand-logo hide-on-med-and-down">People's Blood Bank</a>
                         <ul class="right hide-on-med-and-down">
-                            <li><a href="#modal1"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;SignIn</a></li>
+                            <li><a href="SignIn.jsp"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;SignIn</a></li>
                         </ul>
-                        <div id="modal1" class="modal">
-                            <div class="modal-content">
-                                <div class="center"><img src="images/account_login.png" id="userProfile" /></div>
-                                <h5 class="center">Sign in</h5>
-                                <div class="row">
-                                    <form class="col s12 placeColor" name="myForm" action="loginDone.jsp" method="post" onsubmit="return validate()">
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <i class="material-icons prefix">mail</i>
-                                                <input id="email" type="email" name="email" required class="validate" placeholder="Email">
-
-                                            </div>
-                                            <div class="input-field col s12">
-                                                <i class="material-icons prefix">lock_open</i>
-                                                <input id="password" type="password" name="password" required class="validate" placeholder="Password">
-                                            </div>
-                                            <div class="col s12">
-                                                <span></span>
-                                                <span class="right"><a href="Registration.jsp">Forgot Password?</a></span>
-                                            </div>
-                                            <span><a href="Registration.jsp">Create Account</a></span>
-                                            <span class="right"><button type="submit" class="modal-action waves-effect waves-green btn-flat">NEXT</button></span>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
                         <ul class="side-nav" id="mobile-demo">
                             <li class="tab"><a class="active" href="index.jsp"><i class="material-icons">home</i>Home</a></li>
                             <li class="tab"><a href="aboutUs.jsp"><i class="material-icons">info</i>About Us</a></li>

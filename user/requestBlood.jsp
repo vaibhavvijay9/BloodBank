@@ -3,6 +3,7 @@
         <div>
 
             <div class="row">
+                <a class="right" href="checkStatus.jsp" style="padding-right:10%;"><i class="material-icons prefix">check_circle</i>Check Status</a>
                 <h4 class="left">Request Blood</h4>
             </div>
             <table class="table-width">
@@ -18,7 +19,7 @@
                 </tr>
                 <tr>
                     <td class="firstCol">Units</td>
-                    <td><input class="inputHeight" type="text" required maxlength="2" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="When Required">
+                    <td><input class="inputHeight" type="text" required maxlength="2" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="Units Required">
                     </td>
                 </tr>
                 <tr>

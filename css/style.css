@@ -1,9 +1,26 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #FDF7E1;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
 .nav-extended {
     display: flex;
 }
 
 .brand-logo {
     padding-left: 22px !important;
+}
+
+#userProfile {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
 }
 
 .indicator-item.active {
@@ -16,13 +33,6 @@
     color: white;
 }
 
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: #FDF7E1;
-}
-
 .donor-head {
     background: #D8BB7F;
     font-size: 1.5em;
@@ -33,10 +43,6 @@ body {
     background: #F7E8A0;
     font-size: 1.5em;
     color: white;
-}
-
-main {
-    flex: 1 0 auto;
 }
 
 #feedback {
@@ -76,12 +82,6 @@ iframe {
     float: right;
 }
 
-#userProfile {
-    border-radius: 100%;
-    width: 150px;
-    height: 150px;
-}
-
 #faqColor {
     background-color: #E73D43;
 }
@@ -106,6 +106,13 @@ span a {
     #navWidth {
         width: 100%;
         margin-left: 3%;
+    }
+    .modal {
+        width: 31%;
+        max-height: 70%;
+        overflow-y: hidden;
+        background-color: #E9E9E9;
+        color: #000;
     }
     #homeContent {
         display: flex;
@@ -144,13 +151,6 @@ span a {
         height: 60%;
         width: 30%;
         margin-right: 3%;
-    }
-    .modal {
-        width: 31%;
-        max-height: 70%;
-        overflow-y: hidden;
-        background-color: #E9E9E9;
-        color: #000;
     }
     #inquiry {
         width: 50%;
@@ -257,4 +257,14 @@ marquee {
 #errorMessage,
 #passwordError {
     color: red;
+}
+
+.left-bg {
+    height: 100vh;
+    width: 100%;
+    background: #EE6E73;
+}
+
+.sign-in {
+    overflow-y: hidden;
 }

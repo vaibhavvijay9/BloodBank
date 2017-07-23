@@ -24,7 +24,6 @@ function ValidateEmail() {
     }
 }
 
-
 //password validation
 var password = document.getElementById("password1");
 var confirm_password = document.getElementById("confirm_password");
@@ -43,7 +42,6 @@ function validatePassword() {
 function validate() {
     return (validatePassword() && ValidateEmail());
 }
-
 
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;

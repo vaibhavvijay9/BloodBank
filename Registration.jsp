@@ -12,6 +12,7 @@
     </div>
     <!--NavBar Ends-->
     <div class="row" id="inquiry">
+        User already exists Try <a href="">Signing In</a>
         <h3 id="loginAlign">Registration</h3>
         <form class="col s12" name="registerForm" action="#" onsubmit="return validate()">
             <div class="row">
@@ -22,7 +23,7 @@
                 </div>
                 <div class="input-field col s12">
                     <i class="material-icons prefix">face</i>
-                    <select>
+                    <select required id="gender" name="gender">
                             <option value="" disabled selected>Gender</option>
                             <option value="1">Male</option>
                             <option value="2">Female</option>
@@ -61,8 +62,8 @@
                     <label for="icon_telephone">Mobile</label>
                 </div>
                 <div class="input-field col s12">
-                    <i class="prefix"><img src="images/bloodgroup.svg" class="bloodIcon"/></i>
-                    <select>
+                    <i class="material-icons prefix">opacity</i>
+                    <select required>
                             <option value="" disabled selected>Blood Group</option>
                             <option value="1">A<sup>+</sup></option>
                             <option value="2">B<sup>+</sup></option>
