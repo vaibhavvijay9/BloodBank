@@ -255,7 +255,8 @@ marquee {
 }
 
 #errorMessage,
-#passwordError {
+#passwordError,
+#errorMessage1 {
     color: red;
 }
 
@@ -268,3 +269,109 @@ marquee {
 .sign-in {
     overflow-y: hidden;
 }
+
+
+/* sign in page css */
+
+.left-bg-signin {
+    background: #c62828;
+    height: 90.3%;
+    color: #fff;
+}
+
+.head-left {
+    display: flex;
+    height: 100px;
+    margin: 2%;
+    margin-left: 8%;
+}
+
+.row {
+    margin-bottom: 0% !important;
+}
+
+.right-bg {
+    background: #263238;
+    height: 90.3%;
+}
+
+.sign-in-panel,
+.forgot-password-panel {
+    width: 70%;
+    margin: auto;
+    background: #263238;
+    margin-top: 30%;
+}
+
+.register-btn {
+    background: #263238;
+}
+
+.register-btn:hover {
+    background: #E73D43;
+}
+
+.head-message {
+    font-size: 1.6em;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.head-margin {
+    margin: 1%;
+}
+
+.submit-button {
+    padding-top: 4%;
+}
+
+.submit-btn {
+    background: #fff;
+    color: #263238;
+}
+
+.submit-btn:hover {
+    background: #263238;
+    color: #fff;
+}
+
+.left-content {
+    margin-top: 15%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.content-weight {
+    color: #fff;
+    font-weight: 300;
+}
+
+.left-content-head {
+    font-size: 2em;
+    font-weight: 400 !important;
+    color: #fff;
+}
+
+.left-content-subhead {
+    font-size: 1.2em;
+}
+
+nav,
+footer {
+    background: #E73D43 !important;
+}
+
+.sign-in-nav li:hover {
+    background: #c62828;
+}
+
+.login-content {
+    color: #FFF;
+}
+
+.forgot-link {
+    color: #039be5;
+}
+
+
+/* sign in page css ends */

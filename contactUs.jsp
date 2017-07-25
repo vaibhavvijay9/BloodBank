@@ -19,16 +19,13 @@
         <h3><i class="large material-icons prefix">location_on</i>GET IN TOUCH</h3>
         <b>
                 <br>
-                TAMILNADU STATE AIDS CONTROL SOCIETY & 
-                <br>
-                <br>
-                TAMILNADU STATE BLOOD TRANSFUSION COUNCIL, 
+                PEOPLE'S BLOOD BANK 
                 <br>
                 <br>
                 417, Pantheon Road,Egmore
                 <br>
                 <br>
-                Chennai-600 008,Tamilnadu, India
+                Jaipur-302 001,Rajasthan, India
                 <br>
                 <br>
                 Phone: +91-44-28190261 / 28194917
@@ -37,7 +34,7 @@
                 Board No: +91-44-28190467 / 28190891 
                 <br>
                 <br>
-                E-mail: bloodsafetytansacs@gmail.com
+                E-mail: peoplebloodbank@gmail.com
                 </b>
     </div>
 

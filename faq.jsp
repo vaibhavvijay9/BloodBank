@@ -40,7 +40,4 @@
             </li>
         </ul>
     </div>
-
-
     <%@include file='Footer.html' %>
-        <script src="js/validateEmail.js"></script>

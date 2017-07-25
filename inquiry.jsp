@@ -14,36 +14,35 @@
     <!--NavBar Ends-->
 
     <div class="row" id="inquiry">
-        <form class="col s12">
+        <form class="col s12" action="inquiryDone.jsp" onsubmit="return ValidateEmail()">
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">account_circle</i>
-                    <input id="icon_prefix" type="text" required="true" class="validate">
+                    <input id="icon_prefix" type="text" name="name" required>
                     <label for="icon_prefix">Name</label>
                 </div>
                 <div class="input-field col s12">
                     <i class="material-icons prefix">mail</i>
-                    <input id="email" type="email" name="email" required="true" class="validate">
-                    <label for="email">Email</label>
+                    <input id="email1" type="email" name="email" required>
+                    <label for="email1">Email</label>
+                    <a id="errorMessage" class="right"></a>
                 </div>
                 <div class="input-field col s12">
                     <i class="material-icons prefix">phone</i>
-                    <input id="icon_telephone" type="text" required="true" maxlength="10" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <input id="icon_telephone" type="text" name="phone" maxlength="10" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                     <label for="icon_telephone">Telephone</label>
                 </div>
                 <div class="input-field col s12">
                     <i class="material-icons prefix">chat</i>
-                    <textarea id="icon_prefix2" class="materialize-textarea" required="true"></textarea>
+                    <textarea id="icon_prefix2" name="message" class="materialize-textarea" required></textarea>
                     <label for="icon_prefix2">Message</label>
                 </div>
             </div>
-            <button class="btn waves-effect waves-light" id="inquiryBtn" type="submit" name="action">Submit
+            <button class="btn waves-effect waves-light" id="inquiryBtn" type="submit">Submit
                     <i class="material-icons right">send</i>
-                </button>
+            </button>
         </form>
     </div>
 
-
-
     <%@include file='Footer.html' %>
-        <script src="js/validateEmail.js"></script>
+        <script src="js/index.js"></script>

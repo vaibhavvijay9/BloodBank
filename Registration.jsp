@@ -82,8 +82,5 @@
         </form>
     </div>
 
-
-
-
     <%@include file='Footer.html' %>
         <script src="js/registration.js"></script>
