@@ -34,7 +34,7 @@
                 </div>
                 <div class="input-field col s12">
                     <i class="material-icons prefix">chat</i>
-                    <textarea id="icon_prefix2" name="message" class="materialize-textarea" required></textarea>
+                    <textarea id="icon_prefix2" name="message" class="materialize-textarea" maxlength="350" data-length="350" required></textarea>
                     <label for="icon_prefix2">Message</label>
                 </div>
             </div>
