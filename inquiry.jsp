@@ -12,9 +12,20 @@
     </div>
     </div>
     <!--NavBar Ends-->
+    
+    <%
+       if(null!=request.getAttribute("inquiryMessage"))
+       {
+    %>
+       <div class="success-message">
+           <%=request.getAttribute("inquiryMessage")%>
+       </div>
+    <%
+	   }
+    %>
 
     <div class="row" id="inquiry">
-        <form class="col s12" action="inquiryDone.jsp" onsubmit="return ValidateEmail()">
+        <form class="col s12" action="inquiryDone.jsp" method="post" onsubmit="return ValidateEmail()">
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">account_circle</i>

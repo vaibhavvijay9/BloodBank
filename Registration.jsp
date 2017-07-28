@@ -1,20 +1,44 @@
+<%@page import="bloodbank.DBInfo"%>
 <%@include file='Header.html' %>
+<%@page import="java.sql.*" %>
     <div class="nav-content">
         <ul class="hide-on-med-and-down tabs tabs-transparent">
             <li class="tab"><a href="index.jsp" target="_self">Home</a></li>
             <li class="tab"><a href="aboutUs.jsp" target="_self">About Us</a></li>
             <li class="tab"><a href="contactUs.jsp" target="_self">Contact Us</a></li>
             <li class="tab"><a href="inquiry.jsp" target="_self">Inquiry</a></li>
+            <li class="tab"><a href="faq.jsp" target="_self">FAQ</a></li>
         </ul>
     </div>
     </nav>
     </div>
     </div>
     <!--NavBar Ends-->
+    <!-- registration successful message  -->
+    <%
+       if(null!=request.getAttribute("registrationMessage"))
+       {
+    %>
+       <div class="success-message">
+           <%=request.getAttribute("registrationMessage")%><a href="signIn.jsp">Login Now</a>
+       </div>
+    <%
+	   }
+    %>
+    <!-- user already exists message -->
+    <%
+       if(null!=request.getAttribute("AlreadyExistsMessage"))
+       {
+    %>
+       <div class="error-message">
+           <%=request.getAttribute("AlreadyExistsMessage")%><a href="signIn.jsp">Signing In</a>
+       </div>
+    <%
+	   }
+    %>
     <div class="row" id="inquiry">
-        User already exists Try <a href="">Signing In</a>
         <h3 id="loginAlign">Registration</h3>
-        <form class="col s12" action="registrationDone.jsp" name="registerForm" onsubmit="return validate()">
+        <form class="col s12" action="registrationDone.jsp" method="post" name="registerForm" onsubmit="return validate()">
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">account_circle</i>
@@ -64,11 +88,20 @@
                 <div class="input-field col s12">
                     <i class="material-icons prefix">opacity</i>
                     <select name="blood_group" required>
-                            <option value="" disabled selected>Blood Group</option>
-                            <option value="1">A<sup>+</sup></option>
-                            <option value="2">B<sup>+</sup></option>
-                            <option value="3">O<sup>+</sup></option>
-<!-- get bloodgroup from database -->
+    	                <option value="" disabled selected>Blood Group</option>
+                    <% 
+	                    String query="select * from bloodgroups";
+						Connection con=DBInfo.getConn();	
+						PreparedStatement ps=con.prepareStatement(query); 
+						ResultSet res=ps.executeQuery();
+						while(res.next())
+						{
+					%>
+						<option value="<%=res.getString(1)%>"><%=res.getString(1)%></option>					
+					<%	
+						}
+						con.close();
+					%>
                     </select>
                 </div>
             </div>

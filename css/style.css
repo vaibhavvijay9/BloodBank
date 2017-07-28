@@ -260,6 +260,32 @@ marquee {
     color: red;
 }
 
+.success-message,
+.error-message {
+    padding: 20px;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 1%;
+    font-weight: 700;
+    padding: 0 20px;
+    line-height: 56px;
+    height: 60px;
+    font-size: 15px;
+    width: 50%;
+}
+
+.success-message {
+    color: #359a4d;
+    border: 2px solid #9adaa9;
+    background-color: #d1eed8;
+}
+
+.error-message {
+    color: #7E2C2F;
+    border: 2px solid #B47B7D;
+    background-color: #DFC6C7;
+}
+
 .left-bg {
     height: 100vh;
     width: 100%;

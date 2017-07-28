@@ -3,11 +3,21 @@ $(document).ready(function() {
 
     $('.datepicker').pickadate({
         selectMonths: true, // Creates a dropdown to control month
-        selectYears: 15, // Creates a dropdown of 15 years to control year
+        selectYears: 100, // Creates a dropdown of 100 years to control year
         format: 'yyyy-mm-dd'
     });
 
 });
+
+//var d = new Date();
+//d.setFullYear( d.getFullYear() - 100 );
+//$('.datepicker').pickadate(
+//{
+//   selectMonths: true,
+//   selectYears: true,
+//   min: d,
+//   max: new Date()
+//});
 
 //email validation
 var email = document.getElementById("email1");
