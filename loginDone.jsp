@@ -1,29 +1,19 @@
-<%@include file='Header.html' %>
-    <div class="nav-content">
-        <ul class="hide-on-med-and-down tabs tabs-transparent">
-            <li class="tab"><a href="index.jsp" target="_self">Home</a></li>
-            <li class="tab"><a href="aboutUs.jsp" target="_self">About Us</a></li>
-            <li class="tab"><a href="contactUs.jsp" target="_self">Contact Us</a></li>
-            <li class="tab"><a class="active" href="inquiry.jsp" target="_self">Inquiry</a></li>
-            <li class="tab"><a href="faq.jsp" target="_self">FAQ</a></li>
-        </ul>
-    </div>
-    </nav>
-    </div>
-    </div>
-    <!--NavBar Ends-->
+<jsp:useBean id="obj" class="bloodbank.SignIn">
+<jsp:setProperty name="obj" property="*"/>
+</jsp:useBean>
 
-    <div class="row" id="inquiry">
-        <%
-            String uname=request.getParameter("email");
-            String pass=request.getParameter("password");
-        %>
-
-            Welcome,
-            <%=uname %>
-    </div>
-
-
-
-    <%@include file='Footer.html' %>
-        <script src="js/validateEmail.js"></script>
+<% 
+	String str=obj.login();
+	
+	if(null!=str)
+    {
+    	response.sendRedirect("user/index.jsp");
+    	session.setAttribute("username",obj.getEmail());
+	}
+	else
+	{
+		request.setAttribute("signInMessage", "Wrong username or password");
+        RequestDispatcher rd = request.getRequestDispatcher("/signIn.jsp");
+        rd.forward(request, response);
+	}
+%>

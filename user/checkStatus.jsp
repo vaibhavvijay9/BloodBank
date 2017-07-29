@@ -1,4 +1,4 @@
-<%@include file="userHeader.html" %>
+<%@include file="userHeader.jsp" %>
     <main>
         <div class="row reg-dimension">
             <h4 class="left">Request Details</h4>

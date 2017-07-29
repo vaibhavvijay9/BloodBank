@@ -1,4 +1,4 @@
-<%@include file='userHeader.html' %>
+<%@include file='userHeader.jsp' %>
     <%@ page import="java.sql.*" %>
 
         <main>

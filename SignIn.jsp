@@ -42,7 +42,7 @@
             </div>
             <div class="col s5 right-bg">
                 <div class="sign-in-panel">
-                    <form action="loginProcessing.jsp">
+                    <form action="loginDone.jsp" method="post">
                         <div class="head-message">
                             <a class="center content-weight">Login to your account</a>
                         </div>
@@ -50,26 +50,58 @@
                             <input id="email1" type="email" name="email" placeholder="Enter Username" required>
                             <a id="errorMessage" class="right"></a>
                             <input type="password" name="password" placeholder="Enter Password" required>
-                            <a id="errorMessage">Wrong username or password</a>
+                            <%
+						       if(null!=request.getAttribute("signInMessage"))
+						       {
+						    %>
+						       <a id="errorMessage"><%=request.getAttribute("signInMessage")%></a>
+						    <%
+							   }
+						    %>
+						    
+						    <%
+						       if(null!=request.getAttribute("forgotExistsMessage"))
+						       {
+						       		//here call the forgotpwd class function js
+						       		//OR auto click the link--Forgot Password
+						    %>
+						    <script>
+						    	$(document).ready(function(){
+						    		$(".forgot-link").trigger('click');
+						    	});
+						    	//document.getElementsByClassName(".forgot-link")[0].click();
+						    	//$('.forgot-link').trigger('click');
+						    	//document.getElementById("#forgotPassword").click();​
+						    </script>
+						    <%
+							   }
+						    %>
                         </div>
                         <div class="submit-button row">
                             <div class="col s6">
-                                <button class="btn waves-effect waves-light submit-btn" type="submit">Submit</button></div>
+                                <button class="btn waves-effect waves-light submit-btn" type="submit">Login</button></div>
                             <div class="col s6">
-                                <a class="content-weight forgot-link">Forgot Password ?</a>
+                                <a id="forgotPassword" class="content-weight forgot-link">Forgot Password ?</a>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="forgot-password-panel">
-                    <form action="forgotProcessing.jsp">
+                    <form action="forgotProcessing.jsp" method="post">
                         <div class="head-message">
                             <a class="center content-weight">Enter Username</a>
                         </div>
                         <div class="login-content">
                             <input id="email2" type="email" name="email" placeholder="Enter Email Address" required>
                             <a id="errorMessage1" class="right"></a>
-                            <a id="errorMessage">User does not Exist</a>
+                            <%
+						       if(null!=request.getAttribute("forgotExistsMessage"))
+						       {
+						    %>
+						       <a id="errorMessage"><%=request.getAttribute("forgotExistsMessage")%></a>
+						    <%
+							   }
+						    %>
                         </div>
                         <div class="submit-button row">
                             <div class="col s6">

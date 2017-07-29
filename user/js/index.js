@@ -13,8 +13,32 @@ $(document).ready(function() {
         $('.group').hide();
         $('#' + $(this).val()).show();
     })
+    
+    //setting date on datepicker
+    var $input = $('.defaultDate').pickadate()
+    var date = $('.defaultDate').val();
+    // Use the picker object directly.
+    var picker = $input.pickadate('picker')
+        // Using a string along with the parsing format (defaults to `format` option).
+    picker.set('select', date, { format: 'yyyy-mm-dd' })
 
 });
+
+// makes the datepicker a required field
+function checkDate() 
+{
+	if ($('.check').val() == '') 
+	{
+		$('#requiredMessage').text("*Select a date");
+		$('#requiredMessage').show();
+		return false;
+	}
+	else
+	{
+		$('#requiredMessage').hide();
+		return true;
+	}
+}
 
 // Initialize collapse button
 $(".button-collapse").sideNav();

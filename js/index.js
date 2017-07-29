@@ -24,12 +24,14 @@ function ValidateEmail() {
     }
 }
 email.onkeyup = ValidateEmail;
+
 //sign-in
 $(".forgot-password-panel").hide();
 $(".forgot-link").click(function() {
     $(".sign-in-panel").hide();
     $(".forgot-password-panel").show();
 });
+
 var email2 = document.getElementById("email2");
 
 function ValidateEmail2() {

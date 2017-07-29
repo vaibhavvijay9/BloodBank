@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <title>People's Blood Bank</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,9 +21,17 @@
                 </ul>
                 <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
             </div>
-
         </div>
-
+		<!-- topNav ends -->
+		
+		<!-- sideNav begins (small code email and username)-->
+		
+		<jsp:useBean id="obj" class="user.Profile">
+		</jsp:useBean>
+		<%
+			String username=(String)session.getAttribute("username");
+			obj.viewProfile(username);
+		 %>
         <ul id="slide-out" class="side-nav fixed">
             <li>
                 <div class="user-view">
@@ -32,9 +39,9 @@
                         <img src="../images/cover.jpg">
                     </div>
 
-                    <span id="profilePic">V</span>
-                    <span class="white-text name">Vaibhav Vijay</span>
-                    <span class="white-text email">vaibhavvijay9@gmail.com</span>
+                    <span id="profilePic"><%=obj.getName().charAt(0) %></span>
+                    <span class="white-text name"><%=obj.getName() %></span>
+                    <span class="white-text email"><%=obj.getEmail() %></span>
                 </div>
             </li>
             <li><a href="index.jsp">Home</a></li>

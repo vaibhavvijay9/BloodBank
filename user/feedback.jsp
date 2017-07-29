@@ -1,4 +1,4 @@
-<%@include file='userHeader.html' %>
+<%@include file='userHeader.jsp' %>
     <main>
         <div class="row" id="mainContent">
             <h4 class="left">Feedback</h4>
