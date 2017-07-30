@@ -40,6 +40,23 @@ function checkDate()
 	}
 }
 
+//password verification
+var password = document.getElementById("password1");
+var confirm_password = document.getElementById("confirm_password");
+
+function validatePassword() {
+    if (password.value != confirm_password.value) {
+        $('#passwordError').text("*Passwords Don't Match");
+        $('#passwordError').show();
+        return false;
+    } else {
+        $('#passwordError').hide();
+        return true;
+    }
+}
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+
 // Initialize collapse button
 $(".button-collapse").sideNav();
 // Initialize collapsible (uncomment the line below if you use the dropdown variation)

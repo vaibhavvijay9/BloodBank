@@ -9,16 +9,6 @@ $(document).ready(function() {
 
 });
 
-//var d = new Date();
-//d.setFullYear( d.getFullYear() - 100 );
-//$('.datepicker').pickadate(
-//{
-//   selectMonths: true,
-//   selectYears: true,
-//   min: d,
-//   max: new Date()
-//});
-
 //email validation
 var email = document.getElementById("email1");
 

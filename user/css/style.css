@@ -56,6 +56,9 @@ body {
 #requiredMessage{
 	color: red;
 }
+#passwordError{
+    color: red;
+}
 
 /*For Desktop*/
 

@@ -1,3 +1,7 @@
+<jsp:useBean id="donation_details" class="user.DonationDetails"></jsp:useBean>
+<%
+	donation_details.viewDonations((String)session.getAttribute("username"));
+ %>
 <jsp:include page="userHeader.jsp" />
     <main>
         <div class="row" id="mainContent">
@@ -10,17 +14,9 @@
                     </tr>
 
                     <tbody>
-                        <tr>
-                            <td>Alvin</td>
-                            <td>Eclair</td>
-                        </tr>
-                        <tr>
-                            <td>Alan</td>
-                            <td>Jellybean</td>
-                        </tr>
-                        <tr>
-                            <td>Jonathan</td>
-                            <td>Lollipop</td>
+                        <tr><!-- without bean like general OR arraylist(bean)?? OR JSTL OR Struts ??? -->
+                            <td><%=donation_details.getDonation_date() %></td>
+                            <td><%=donation_details.getVenue() %></td>
                         </tr>
                     </tbody>
             </table>
