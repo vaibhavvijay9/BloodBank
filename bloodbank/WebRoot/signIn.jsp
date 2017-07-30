@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="images/16x16.png" type="image/gif" sizes="16x16">
+    
+    <!-- this is applied prior because it is being used for auto click on forgot password -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
@@ -58,20 +61,16 @@
 						    <%
 							   }
 						    %>
-						    
+						    <!-- if wrong username on forgotPassword panel then again on forgotPassword panel -->
+						    <!-- means by auto clicking forgor-password link(text) -->
 						    <%
 						       if(null!=request.getAttribute("forgotExistsMessage"))
 						       {
-						       		//here call the forgotpwd class function js
-						       		//OR auto click the link--Forgot Password
 						    %>
 						    <script>
 						    	$(document).ready(function(){
 						    		$(".forgot-link").trigger('click');
 						    	});
-						    	//document.getElementsByClassName(".forgot-link")[0].click();
-						    	//$('.forgot-link').trigger('click');
-						    	//document.getElementById("#forgotPassword").click();​
 						    </script>
 						    <%
 							   }
