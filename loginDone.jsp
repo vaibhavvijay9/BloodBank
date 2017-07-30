@@ -1,14 +1,14 @@
-<jsp:useBean id="obj" class="bloodbank.SignIn">
-<jsp:setProperty name="obj" property="*"/>
+<jsp:useBean id="sign_in" class="bloodbank.SignIn">
+<jsp:setProperty name="sign_in" property="*"/>
 </jsp:useBean>
 
 <% 
-	String str=obj.login();
+	String str=sign_in.login();
 	
 	if(null!=str)
     {
     	response.sendRedirect("user/index.jsp");
-    	session.setAttribute("username",obj.getEmail());
+    	session.setAttribute("username",sign_in.getEmail());
 	}
 	else
 	{

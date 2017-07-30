@@ -4,7 +4,7 @@
 <%
 	obj.viewProfile((String)session.getAttribute("username"));
  %>
-<%@include file="userHeader.jsp" %>
+<jsp:include page="userHeader.jsp" />
     <main>
         <div>
             <div class="row">

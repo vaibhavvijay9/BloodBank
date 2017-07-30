@@ -1,4 +1,4 @@
-<%@include file="userHeader.jsp" %>
+<jsp:include page="userHeader.jsp" />
     <main>
         <div class="row" id="mainContent">
             <h4 class="left">Donation Details</h4>

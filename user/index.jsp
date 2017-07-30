@@ -1,4 +1,4 @@
-<%@include file="userHeader.jsp" %>
+<jsp:include page="userHeader.jsp" />
     <div class="largeTable">
         <div class="dashboard-desktop">
             <div class=" dash-border z-depth-5">

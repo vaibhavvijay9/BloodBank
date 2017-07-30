@@ -11,7 +11,7 @@ $(document).ready(function() {
     $('.group').hide();
     $('#selectMe').change(function() {
         $('.group').hide();
-        $('#' + $(this).val()).show();
+        $('#' + $(this).val().replace(/\s/g,'')).show();	//since id cannot contain spaces
     })
     
     //setting date on datepicker

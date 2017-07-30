@@ -1,9 +1,9 @@
-<jsp:useBean id="obj" class="user.EditProfile">
-<jsp:setProperty name="obj" property="*"/>
+<jsp:useBean id="edit_profile" class="user.EditProfile">
+<jsp:setProperty name="edit_profile" property="*"/>
 </jsp:useBean>
 
 <% 
-	int i=obj.updateProfile();
+	int i=edit_profile.updateProfile();
 	
 	if(i==1)
     {
