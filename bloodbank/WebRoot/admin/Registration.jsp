@@ -1,6 +1,6 @@
 <%@include file="adminHeader.html" %>
     <main>
-        <div class="row reg-dimension">
+        <div class="row reg-dimension1">
             <h3 class="center">Registration</h3>
             <form class="col s12">
                 <div class="row">

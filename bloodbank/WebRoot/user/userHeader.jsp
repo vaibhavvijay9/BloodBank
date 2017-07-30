@@ -17,7 +17,7 @@
                 <img src="../images/100x100.png">
                 <a class="brand-logo hide-on-med-and-down">People's Blood Bank</a>
                 <ul class="right">
-                    <li><a href="sass.html" class="hide-on-med-and-down"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;Sign Out</a></li>
+                    <li><a href="signOut.jsp" class="hide-on-med-and-down"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;Sign Out</a></li>
                 </ul>
                 <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
             </div>
@@ -53,7 +53,7 @@
             <li><a href="yourStory.jsp">Write Your Story</a></li>
             <li><a href="feedback.jsp">Feedback</a></li>
             <li><a href="changePassword.jsp">Change Password</a></li>
-            <li class="hide1"><a href="sass.html">Sign Out</a></li>
+            <li class="hide1"><a href="signOut.jsp">Sign Out</a></li>
         </ul>
     </nav>
 

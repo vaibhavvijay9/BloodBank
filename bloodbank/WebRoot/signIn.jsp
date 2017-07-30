@@ -62,9 +62,10 @@
 							   }
 						    %>
 						    <!-- if wrong username on forgotPassword panel then again on forgotPassword panel -->
-						    <!-- means by auto clicking forgor-password link(text) -->
+						    <!-- means by auto clicking forgor-password link(text
+						    ) -->
 						    <%
-						       if(null!=request.getAttribute("forgotExistsMessage"))
+						       if(null!=request.getAttribute("forgotExistsMessage") || null!=request.getAttribute("forgotSuccessMessage"))
 						       {
 						    %>
 						    <script>
@@ -86,6 +87,16 @@
                     </form>
                 </div>
                 <div class="forgot-password-panel">
+                    <%
+				       if(null!=request.getAttribute("forgotSuccessMessage"))
+				       {
+				    %>
+				    	<a style="color: white"><%=(String)request.getAttribute("forgotSuccessMessage")%></a>
+				    	<br>
+				    	<a href="signIn.jsp">Sign In</a>
+				    <%  		
+				       }
+				    %>	    
                     <form action="forgotProcessing.jsp" method="post">
                         <div class="head-message">
                             <a class="center content-weight">Enter Username</a>
