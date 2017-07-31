@@ -1,12 +1,12 @@
-<jsp:useBean id="user_change_password" class="bloodbank.ChangePassword">
-<jsp:setProperty name="user_change_password" property="*"/>
+<jsp:useBean id="admin_change_password" class="bloodbank.ChangePassword">
+<jsp:setProperty name="admin_change_password" property="*"/>
 </jsp:useBean>
 
 <jsp:useBean id="email_changePassword" class="bloodbank.Email">
 </jsp:useBean>
 
 <% 
-	int i=user_change_password.validate((String)session.getAttribute("username"));
+	int i=admin_change_password.validate((String)session.getAttribute("username"));
 	
 	if(i==0)
     {
@@ -16,7 +16,7 @@
     }
     else
     {   
-    	int j=user_change_password.change((String)session.getAttribute("username"));
+    	int j=admin_change_password.change((String)session.getAttribute("username"));
     	
     	if(j==1)
     	{

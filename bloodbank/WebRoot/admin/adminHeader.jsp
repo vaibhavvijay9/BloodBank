@@ -18,13 +18,22 @@
                 <img src="../images/100x100.png">
                 <a class="brand-logo hide-on-med-and-down">People's Blood Bank</a>
                 <ul class="right">
-                    <li class="hide-on-med-and-down"><a href="sass.html"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;Sign Out</a></li>
+                    <li class="hide-on-med-and-down"><a href="signOut.jsp"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;Sign Out</a></li>
                 </ul>
                 <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
             </div>
 
         </div>
-
+		<!-- topNav ends -->
+		
+		<!-- sideNav begins (small code email and username)-->
+		
+		<jsp:useBean id="header" class="bloodbank.Profile">
+		</jsp:useBean>
+		<%
+			String username=(String)session.getAttribute("username");
+			header.viewProfile(username);
+		 %>
         <ul id="slide-out" class="side-nav fixed">
             <li>
                 <div class="user-view">
@@ -32,14 +41,14 @@
                         <img src="../images/cover.jpg">
                     </div>
 
-                    <span id="profilePic">A</span>
-                    <span class="white-text name">Ajay Kumar</span>
-                    <span class="white-text email">ajaykumar333@gmail.com</span>
+                    <span id="profilePic"><%=header.getName().charAt(0) %></span>
+                    <span class="white-text name"><%=header.getName() %></span>
+                    <span class="white-text email"><%=header.getEmail() %></span>
                 </div>
             </li>
             <li><a href="index.jsp">Home</a></li>
             <li><a href="profile.jsp">Profile</a></li>
-            <li><a href="Registration.jsp">Register User</a></li>
+            <li><a href="registration.jsp">Register User</a></li>
             <li><a href="registerCamp.jsp">Register/Manage Camp</a></li>
             <li><a href="manageStock.jsp">Manage Stock</a></li>
             <li><a href="manageAppointments.jsp">Manage Appointments/Donations</a></li>
@@ -48,7 +57,7 @@
             <li><a href="manageFeedback.jsp">Manage Feedback</a></li>
             <li><a href="userStories.jsp">User Stories</a></li>
             <li><a href="changePassword.jsp">Change Password</a></li>
-            <li class="hide1"><a href="sass.html">Sign Out</a></li>
+            <li class="hide1"><a href="signOut.jsp">Sign Out</a></li>
         </ul>
     </nav>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

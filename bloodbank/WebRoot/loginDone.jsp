@@ -7,8 +7,16 @@
 	
 	if(null!=str)
     {
-    	response.sendRedirect("user/index.jsp");
-    	session.setAttribute("username",sign_in.getEmail());
+    	if(str.equalsIgnoreCase("user"))
+    	{
+    		response.sendRedirect("user/index.jsp");
+    		session.setAttribute("username",sign_in.getEmail());
+    	}
+    	if(str.equalsIgnoreCase("admin"))
+    	{
+    		response.sendRedirect("admin/index.jsp");
+    		session.setAttribute("username",sign_in.getEmail());
+    	}
 	}
 	else
 	{

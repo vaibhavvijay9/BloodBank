@@ -26,11 +26,11 @@
 		
 		<!-- sideNav begins (small code email and username)-->
 		
-		<jsp:useBean id="obj" class="user.Profile">
+		<jsp:useBean id="header" class="bloodbank.Profile">
 		</jsp:useBean>
 		<%
 			String username=(String)session.getAttribute("username");
-			obj.viewProfile(username);
+			header.viewProfile(username);
 		 %>
         <ul id="slide-out" class="side-nav fixed">
             <li>
@@ -39,9 +39,9 @@
                         <img src="../images/cover.jpg">
                     </div>
 
-                    <span id="profilePic"><%=obj.getName().charAt(0) %></span>
-                    <span class="white-text name"><%=obj.getName() %></span>
-                    <span class="white-text email"><%=obj.getEmail() %></span>
+                    <span id="profilePic"><%=header.getName().charAt(0) %></span>
+                    <span class="white-text name"><%=header.getName() %></span>
+                    <span class="white-text email"><%=header.getEmail() %></span>
                 </div>
             </li>
             <li><a href="index.jsp">Home</a></li>

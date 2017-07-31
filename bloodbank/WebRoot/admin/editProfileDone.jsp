@@ -1,9 +1,9 @@
-<jsp:useBean id="user_edit_profile" class="bloodbank.EditProfile">
-<jsp:setProperty name="user_edit_profile" property="*"/>
+<jsp:useBean id="admin_edit_profile" class="bloodbank.EditProfile">
+<jsp:setProperty name="admin_edit_profile" property="*"/>
 </jsp:useBean>
 
 <% 
-	int i=user_edit_profile.updateProfile();
+	int i=admin_edit_profile.updateProfile();
 	
 	if(i==1)
     {

@@ -12,6 +12,11 @@
     display: block;
 }
 
+.reg-dimension {
+    width: 90%;
+    margin-left: 0% !important;
+}
+
 .inputHeight {
     height: 2rem !important;
 }
@@ -24,6 +29,35 @@ body {
     background-color: #FDF7E1;
 }
 
+.success-message,
+.error-message {
+    padding: 15px;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 1%;
+    font-weight: 700;
+    min-height: 60px;
+    font-size: 15px;
+    width: 50%;
+}
+
+.success-message {
+    color: #359a4d;
+    border: 2px solid #9adaa9;
+    background-color: #d1eed8;
+}
+
+.error-message {
+	color: #F55448;
+    border: 2px solid #F8877F;
+    background-color: #FCCBC8;
+}
+#requiredMessage{
+	color: red;
+}
+#passwordError{
+    color: red;
+}
 
 /*For Desktop*/
 
@@ -46,7 +80,9 @@ body {
     }
     .reg-dimension{
     width:90%;
-    margin:0% !important;}
+    margin:0% !important;
+    }
+    
     .table-width {
         width: 70%;
     }
@@ -129,4 +165,11 @@ body {
 .modal {
     width: 31%;
     max-height: 74%;
+}
+input.select-dropdown {
+    height: 2rem !important;
+}
+
+textarea.inputHeight {
+    min-height: 2rem !important;
 }

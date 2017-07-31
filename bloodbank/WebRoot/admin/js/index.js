@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     $('.datepicker').pickadate({
         selectMonths: true, // Creates a dropdown to control month
-        selectYears: 15, // Creates a dropdown of 15 years to control year
+        selectYears: 100, // Creates a dropdown of 15 years to control year
         format: 'yyyy-mm-dd' //vv set the defined format vv
     });
 
@@ -29,3 +29,20 @@ function validate() {
         return false;
     }
 }
+
+//password verification
+var password = document.getElementById("password1");
+var confirm_password = document.getElementById("confirm_password");
+
+function validatePassword() {
+    if (password.value != confirm_password.value) {
+        $('#passwordError').text("*Passwords Don't Match");
+        $('#passwordError').show();
+        return false;
+    } else {
+        $('#passwordError').hide();
+        return true;
+    }
+}
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
