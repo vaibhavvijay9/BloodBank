@@ -1,4 +1,4 @@
-<%@include file="adminHeader.html" %>
+<jsp:include page="adminHeader.jsp" />
     <main>
         <div class="row reg-dimension">
             <h4 class="left">Manage Requests</h4>

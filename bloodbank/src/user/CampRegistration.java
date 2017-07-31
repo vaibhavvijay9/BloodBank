@@ -7,7 +7,8 @@ import bloodbank.DBInfo;
 
 public class CampRegistration 
 {
-	private String campname,date,venue;	
+	private String campname;	
+	private String date,venue;
 	
 	public String getCampname() {
 		return campname;
@@ -17,21 +18,29 @@ public class CampRegistration
 		this.campname = campname;
 	}
 	
-	public String getDate() {
-		return date;
+	//fetching date and venue of camp
+	public void getDateVenue()
+	{
+		try
+		{
+			String query="select date,venue from camps where name=?";
+			Connection con=DBInfo.getConn();	
+			PreparedStatement ps=con.prepareStatement(query);
+			ps.setString(1, campname);
+			ResultSet res=ps.executeQuery();
+			while(res.next())
+			{
+				date=res.getString(1);
+				venue=res.getString(2);
+			}
+			con.close();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
 	}
-	
-	public void setDate(String date) {
-		this.date = date;
-	}
-	
-	public String getVenue() {
-		return venue;
-	}
-	
-	public void setVenue(String venue) {
-		this.venue = venue;
-	}
+	//
 	
 	public int isEligible(String username)
 	{
@@ -46,11 +55,18 @@ public class CampRegistration
 			ResultSet res=ps.executeQuery();
 			while(res.next())
 			{
-				int interval=Integer.parseInt(res.getString(1));
-				if(interval<=90)
+				if(res.getString(1)!=null)
 				{
-					flag=1;
-					break;
+					int interval=Integer.parseInt(res.getString(1));
+					if(interval<=90)
+					{
+						flag=1;
+						break;
+					}
+				}
+				else
+				{
+					flag=0;
 				}
 			}
 			con.close();
@@ -61,6 +77,7 @@ public class CampRegistration
 		}
 		return flag;
 	}
+	
 	public int campRegister(String username)
 	{
 		int flag=0;

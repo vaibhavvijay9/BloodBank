@@ -1,4 +1,4 @@
-<%@include file="adminHeader.html" %>
+<jsp:include page="adminHeader.jsp" />
     <main>
         <div class="row reg-dimension1">
             <h3 class="center">Registration</h3>

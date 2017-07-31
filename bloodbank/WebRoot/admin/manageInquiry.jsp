@@ -1,4 +1,4 @@
-<%@include file="adminHeader.html" %>
+<jsp:include page="adminHeader.jsp" />
     <div class="largeTable">
         <div class="row">
             <h4 class="left">Inquiries</h4>

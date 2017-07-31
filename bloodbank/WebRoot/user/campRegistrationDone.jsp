@@ -1,11 +1,13 @@
 <jsp:useBean id="camp_registration" class="user.CampRegistration">
-<jsp:setProperty name="camp_registration" property="*"/>
+<jsp:setProperty name="camp_registration" property="campname"/>
 </jsp:useBean>
 
 <jsp:useBean id="email_camp" class="bloodbank.Email">
 </jsp:useBean>
 
 <% 
+	camp_registration.getDateVenue();
+	
 	int i=camp_registration.isEligible((String)session.getAttribute("username"));
 	if(i==1)
 	{

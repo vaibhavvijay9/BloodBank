@@ -1,4 +1,4 @@
-<%@include file="adminHeader.html" %>
+<jsp:include page="adminHeader.jsp" />
     <main>
         <div class="row" id="mainContent">
             <h4 class="left">Change Password</h4>
