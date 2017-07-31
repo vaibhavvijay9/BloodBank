@@ -1,10 +1,21 @@
 <%@page import="bloodbank.DBInfo"%>
 <%@page import="java.sql.*"%>
-<jsp:useBean id="obj" class="user.Profile"></jsp:useBean>
-<%
-	obj.viewProfile((String)session.getAttribute("username"));
- %>
+<%@page import="java.util.Vector"%>
 <jsp:include page="userHeader.jsp" />
+
+<jsp:useBean id="ed_profile" class="user.Profile">
+</jsp:useBean>
+<%
+	ed_profile.viewProfile((String)session.getAttribute("username"));
+ %>
+
+<jsp:useBean id="blood_group" class="bloodbank.BloodGroups">
+</jsp:useBean>
+<%
+	blood_group.getBloodGroups();
+	Vector<String> blood=blood_group.bloodGroup();
+%> 
+ 
     <main>
         <div>
             <div class="row">
@@ -14,13 +25,13 @@
             <table class="table-width">
                 <tr>
                     <td class="firstCol">Name</td>
-                    <td><input type="text" name="name" value="<%=obj.getName()%>" class="inputHeight" required></td>
+                    <td><input type="text" name="name" value="<%=ed_profile.getName()%>" class="inputHeight" required></td>
                 </tr>
                 <tr>
                     <td class="firstCol">Gender</td>
                     <td>
                         <select name="gender" required>
-                            <option value="<%=obj.getGender()%>" selected><%=obj.getGender()%></option>
+                            <option value="<%=ed_profile.getGender()%>" selected><%=ed_profile.getGender()%></option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
                             <option value="Other">Other</option>
@@ -30,40 +41,35 @@
                 <tr>
                     <td class="firstCol">BirthDate</td>
                     <td>
-                        <input type="date" name="birthdate" value="<%=obj.getBirthdate()%>" class="defaultDate datepicker inputHeight" required>
+                        <input type="date" name="birthdate" value="<%=ed_profile.getBirthdate()%>" class="defaultDate datepicker inputHeight" required>
                     </td>
                 </tr>
                 <tr>
                     <td class="firstCol">Email</td>
-                    <td><input type="email" name="email" class="inputHeight" value="<%=obj.getEmail()%>" readonly></td>
+                    <td><input type="email" name="email" class="inputHeight" value="<%=ed_profile.getEmail()%>" readonly></td>
                 </tr>
                 <tr>
                     <td class="firstCol">Address</td>
-                    <td><textarea name="address" class="materialize-textarea inputHeight" required><%=obj.getAddress()%></textarea></td>
+                    <td><textarea name="address" class="materialize-textarea inputHeight" required><%=ed_profile.getAddress()%></textarea></td>
                 </tr>
                 <tr>
                     <td class="firstCol">Contact</td>
-                    <td><input type="text" name="phone" value="<%=obj.getPhone()%>" class="inputHeight" maxlength="10" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <td><input type="text" name="phone" value="<%=ed_profile.getPhone()%>" class="inputHeight" maxlength="10" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                     </td>
                 </tr>
                 <tr>
                     <td class="firstCol">BloodGroup</td>
                     <td>
                         <select name="bloodgroup" required>
-                            <option value="<%=obj.getBloodgroup()%>" selected><%=obj.getBloodgroup()%></option>
-                        <% 
-		                    String query="select * from bloodgroups";
-							Connection con=DBInfo.getConn();	
-							PreparedStatement ps=con.prepareStatement(query); 
-							ResultSet res=ps.executeQuery();
-							while(res.next())
+                            <option value="<%=ed_profile.getBloodgroup()%>" selected><%=ed_profile.getBloodgroup()%></option>
+						<% 
+		                    for(int i=0;i<blood.size();i++)
 							{
 						%>
-							<option value="<%=res.getString(1)%>"><%=res.getString(1)%></option>					
+							<option value="<%=blood.get(i)%>"><%=blood.get(i)%></option>					
 						<%	
 							}
-							con.close();
-						%>
+						%>	
                         </select>
                     </td>
                 </tr>

@@ -1,6 +1,15 @@
 <%@page import="bloodbank.DBInfo"%>
 <%@include file='Header.html' %>
 <%@page import="java.sql.*" %>
+<%@page import="java.util.Vector"%>
+
+<jsp:useBean id="blood_groups" class="bloodbank.BloodGroups">
+</jsp:useBean>
+<%
+	blood_groups.getBloodGroups();
+	Vector<String> blood=blood_groups.bloodGroup();
+%>
+
     <div class="nav-content">
         <ul class="hide-on-med-and-down tabs tabs-transparent">
             <li class="tab"><a href="index.jsp" target="_self">Home</a></li>
@@ -90,17 +99,12 @@
                     <select name="bloodgroup" required>
     	                <option value="" disabled selected>Blood Group</option>
                     <% 
-	                    String query="select * from bloodgroups";
-						Connection con=DBInfo.getConn();	
-						PreparedStatement ps=con.prepareStatement(query); 
-						ResultSet res=ps.executeQuery();
-						while(res.next())
+	                    for(int i=0;i<blood.size();i++)
 						{
 					%>
-						<option value="<%=res.getString(1)%>"><%=res.getString(1)%></option>					
+						<option value="<%=blood.get(i)%>"><%=blood.get(i)%></option>					
 					<%	
 						}
-						con.close();
 					%>
                     </select>
                 </div>

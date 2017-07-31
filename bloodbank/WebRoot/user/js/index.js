@@ -27,6 +27,7 @@ $(document).ready(function() {
 // makes the datepicker a required field
 function checkDate() 
 {
+	console.log($('.check').val());
 	if ($('.check').val() == '') 
 	{
 		$('#requiredMessage').text("*Select a date");
