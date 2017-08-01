@@ -81,7 +81,7 @@ public class CampRegistration
 	public int campRegister(String username)
 	{
 		int flag=0;
-		String query="insert into appointments values(?,?,?)";
+		String query="insert into appointments values(?,?,?,?)";
 		try
 		{
 			Connection con=DBInfo.getConn();	
@@ -89,6 +89,7 @@ public class CampRegistration
 			ps.setString(1, username);
 			ps.setString(2, date);
 			ps.setString(3, venue);
+			ps.setString(4, "not_donated");		//admin will update it when donation is done
 			flag=ps.executeUpdate();
 			con.close();
 		}

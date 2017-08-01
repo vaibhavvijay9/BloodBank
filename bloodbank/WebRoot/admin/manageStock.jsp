@@ -1,5 +1,24 @@
+<%@page import="java.util.Vector"%>
+<jsp:useBean id="manage_stock" class="admin.ManageStock">
+</jsp:useBean>
+<%
+	manage_stock.getStock();
+	Vector<String> bloodgroup=manage_stock.bloodgroup();
+	Vector<String> units=manage_stock.units();
+ %>
 <jsp:include page="adminHeader.jsp" />
     <main>
+    	<!-- stock updated-->
+    	<%
+	       if(null!=request.getAttribute("stockAddedMessage"))
+	       {
+	    %>
+	       <div class="success-message">
+	           <%=request.getAttribute("stockAddedMessage")%>
+	       </div>
+	    <%
+		   }
+	    %>
         <div class="row reg-dimension">
             <div class="row">
                 <a class="right" href="deleteStock.jsp" style="padding:2% 0% 0% 0%;"><i class="material-icons right">settings</i>Delete Stock</a>
@@ -15,22 +34,29 @@
                     </tr>
 
                     <tbody>
-                        <tr>
-                            <%
-                                String bg="ritik";
-                            %>
-                                <td>
-                                    <%=bg%>
+                    <% 
+						for(int i=0;i<bloodgroup.size();i++)
+						{	
+					%>
+							<form action="manageStockDone.jsp" method="post">
+							<tr>
+								<td>
+								<%=bloodgroup.get(i) %>
+								<input type="hidden" name="bloodgroup" value="<%=bloodgroup.get(i)%>"/>
+								</td>
+								<td><%=units.get(i) %></td>
+								<td>
+                                    <input type="text" name="units" class="inputHeight" style="width:30%;text-align:center;" maxlength="2" required>
+                                	
                                 </td>
-                                <td>40</td>
                                 <td>
-                                    <input class="inputHeight" type="text" style="width:30%;text-align:center;" maxlength="3">
+                                    <button class="btn-flat"><i class="material-icons">done</i></button>
                                 </td>
-                                <td>
-                                    <a href=""><i class="material-icons">done</i></a>
-                                </td>
-                        </tr>
-
+							</tr>
+							</form>
+					<%
+						}
+					%>
                     </tbody>
             </table>
         </div>
