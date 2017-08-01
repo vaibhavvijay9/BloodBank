@@ -30,6 +30,23 @@ function validate() {
     }
 }
 
+//makes the datepicker a required field
+function checkDate() 
+{
+	console.log($('.check').val());
+	if ($('.check').val() == '') 
+	{
+		$('#requiredMessage').text("*Select a date");
+		$('#requiredMessage').show();
+		return false;
+	}
+	else
+	{
+		$('#requiredMessage').hide();
+		return true;
+	}
+}
+
 //password verification
 var password = document.getElementById("password1");
 var confirm_password = document.getElementById("confirm_password");
