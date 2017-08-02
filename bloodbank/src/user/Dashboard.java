@@ -66,7 +66,10 @@ public class Dashboard
 			ResultSet res=ps.executeQuery();
 			while(res.next())
 			{
-				date=res.getString(1);
+				if(res.getString(1)!=null)
+				{
+					date=res.getString(1);
+				}
 			}
 			con.close();
 		}

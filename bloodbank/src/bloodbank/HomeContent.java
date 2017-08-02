@@ -74,7 +74,6 @@ public class HomeContent
 		return d_times;
 	}
 	
-	
 	//getting camps (c)
 	public Vector<String> c_date=new Vector<String>();
 	public Vector<String> c_name=new Vector<String>();
@@ -82,7 +81,7 @@ public class HomeContent
 	
 	public void getCamps()
 	{
-		String query="select * from camps where date>curdate()";
+		String query="select * from camps where date>curdate() order by date";
 		try
 		{
 			Connection con=DBInfo.getConn();	
