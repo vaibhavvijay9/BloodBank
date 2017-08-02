@@ -16,7 +16,7 @@
             
         String to=request.getParameter("email");
 		String subject="Story Reported";
-		String message="Your story has been rejected as it contained some absusive content.Thank You.";
+		String message="Your story has been rejected as it contained some abusive content.Thank You.";
 		email_report_story.sendMail(to, subject, message);
 	}
 %>
