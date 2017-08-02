@@ -25,7 +25,7 @@ public class ManageRequests
 	// 1. getting all requests
 	public void getRequests()
 	{
-		String query="select * from requests order by status desc,required_date";
+		String query="select * from requests order by status,required_date";
 		try
 		{
 			Connection con=DBInfo.getConn();	
@@ -82,7 +82,7 @@ public class ManageRequests
 	int required=0;		//units of blood required
 
 	
-	// 2. update status from "Pending"--->"Approved" OR "Approved"--->"Provided"
+	// 2. update status from "Confirm"--->"Confirmed" OR "Confirmed"--->"Provided"
 	public int updateRequestStatus(String username,String patient_name,int units,String old_status,String new_status)
 	{
 		int flag=0;

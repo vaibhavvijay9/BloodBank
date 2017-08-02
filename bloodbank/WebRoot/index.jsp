@@ -1,3 +1,24 @@
+<%@page import="java.util.Vector"%>
+<jsp:useBean id="home" class="bloodbank.HomeContent">
+</jsp:useBean>
+<%
+	//upcoming camps
+	home.getCamps();
+	Vector<String> camp_date=home.campDate();
+	Vector<String> camp_name=home.campName();
+	Vector<String> camp_venue=home.campVenue();
+	
+	//inspiring stories
+	home.getStories();
+	Vector<String> story_username=home.storyUsername();
+	Vector<String> story_content=home.storyContent();
+	
+	//top blood donors
+	home.getTopDonors();
+	Vector<String> donor_username=home.donorUsername();
+	Vector<String> donor_times=home.donorTimes();
+	
+%>
 <%@include file='Header.html' %>
     <%@ page import="java.sql.*" %>
 
@@ -27,8 +48,19 @@
                 <div class="center activity-head">
                     Upcoming Activities
                 </div>
-                <marquee direction="down">
-                    Hello<br> vaibhav vijay<br>
+                 <marquee onmouseover="stop()" onmouseout="start()" direction="up" scrolldelay="100">
+				<%
+					for(int i=0;i<camp_date.size();i++)
+					{
+				%>
+					<p style="text-align:justify">
+					<i class="material-icons prefix tiny">radio_button_checked</i>
+					<span style="color:red"><%=camp_date.get(i)+"-"+camp_name.get(i)%></span><br>
+					<%=camp_venue.get(i) %>
+					</p>
+				<%		
+					}
+				 %>
                 </marquee>
             </div>
         </div>
@@ -37,24 +69,19 @@
                 <div class="center story-head">
                     Inspiring Stories
                 </div>
-                <div style="margin:1%;">
-                    <marquee onmouseover="stop()" onmouseout="start()" direction="up">
-
-                        <%
-                    Class.forName("com.mysql.jdbc.Driver");
-			        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz_db","root","rat");
-                    String query="select ques from quiz where qno in(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)";
-                    PreparedStatement ps=con.prepareStatement(query);
-                    ResultSet res=ps.executeQuery();
-                    
-                    while(res.next())
-                    {
-                    %>
-                            <%=res.getString(1)%><br><br>
-                                <%
-                        }
-
-                    %>
+                <div style="margin:1% 3% 1% 3%;">
+                    <marquee onmouseover="stop()" onmouseout="start()" direction="up" scrolldelay="100">
+					<%
+						for(int i=0;i<story_username.size();i++)
+						{
+					%>
+						<p style="text-align:justify">
+						<i class="material-icons prefix tiny">radio_button_checked</i>
+						<span style="color:red"><%=story_username.get(i)%> writes: </span><%=story_content.get(i) %>
+						</p>
+					<%		
+						}
+					 %>
                     </marquee>
                 </div>
             </div>
@@ -62,9 +89,19 @@
                 <div class="center donor-head">
                     Top Blood Donors
                 </div>
-                <div class="logoWatermark">
-                    <marquee direction="down">
-                        Hello<br> vaibhav vijay<br>
+                <div style="margin:1% 3% 1% 3%;">
+                    <marquee onmouseover="stop()" onmouseout="start()" direction="up" scrolldelay="100">
+                    <%
+						for(int i=0;i<donor_username.size();i++)
+						{
+					%>
+						<p style="text-align:justify">
+						<i class="material-icons prefix tiny">radio_button_checked</i>
+						<span style="color:red"><%=donor_username.get(i)%></span> donated <%=donor_times.get(i) %> times.
+						</p>
+					<%		
+						}
+					 %>
                     </marquee>
                 </div>
             </div>

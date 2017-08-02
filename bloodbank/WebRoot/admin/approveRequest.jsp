@@ -12,9 +12,9 @@
 	String bloodgroup=request.getParameter("bloodgroup");
 	String status=request.getParameter("status");
 	
-	if(status.equalsIgnoreCase("pending"))
+	if(status.equalsIgnoreCase("Confirm"))
 	{
-		int i=approve_request.updateRequestStatus(username, patient_name, units, status, "Approved");
+		int i=approve_request.updateRequestStatus(username, patient_name, units, status, "Confirmed");
 		if(i==1)
     	{
 	        request.setAttribute("requestApproveMessage", "Request approved.");
@@ -28,9 +28,9 @@
 		
 		}
 	}
-	if(status.equalsIgnoreCase("approved"))
+	if(status.equalsIgnoreCase("Confirmed"))
 	{
-		int i=approve_request.updateRequestStatus(username, patient_name, units, status, "Supplied");
+		int i=approve_request.updateRequestStatus(username, patient_name, units, status, "Provided");
 		
 		approve_request.fetchStock(bloodgroup, units);
 		

@@ -25,8 +25,11 @@
                 </tr>
                 <tr>
                     <td class="firstCol">Date</td>
-                    <td><input type="date" name="date" class="datepicker check" placeholder="Enter Camp Dates"></td>
-                	<a id="requiredMessage" class="right"></a>
+                    <td>
+                    	<input type="date" name="date" class="datepicker check" placeholder="Enter Camp Dates">
+                    	<a id="requiredMessage" class="right"></a>
+                    </td>
+                	
                 </tr>
                 <tr>
                     <td class="firstCol">Venue</td>

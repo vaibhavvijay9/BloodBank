@@ -63,7 +63,7 @@ public class RequestBlood
 			ps.setString(4, units);
 			ps.setString(5, bloodgroup);
 			ps.setString(6, hospitalName);
-			ps.setString(7, "Pending");		//ADMIN will update it.
+			ps.setString(7, "Confirm");		//ADMIN will update it.
 			flag=ps.executeUpdate();
 			con.close();
 		}

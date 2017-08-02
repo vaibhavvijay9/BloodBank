@@ -13,7 +13,7 @@ public class Camps
 	
 	public void getCamps()
 	{
-		String query="select * from camps";
+		String query="select * from camps where date>curdate()";
 		try
 		{
 			Connection con=DBInfo.getConn();	
