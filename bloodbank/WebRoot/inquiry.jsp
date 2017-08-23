@@ -23,7 +23,6 @@
         <%
 	   }
     %>
-            1234
             <div class="row" id="inquiry">
                 <form class="col s12" action="inquiryDone.jsp" method="post" onsubmit="return ValidateEmail()">
                     <div class="row">
@@ -40,7 +39,7 @@
                         </div>
                         <div class="input-field col s12">
                             <i class="material-icons prefix">phone</i>
-                            <input id="icon_telephone" type="text" name="phone" maxlength="10" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                            <input id="icon_telephone" type="text" name="phone" minlength="10" maxlength="10" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                             <label for="icon_telephone">Telephone</label>
                         </div>
                         <div class="input-field col s12">

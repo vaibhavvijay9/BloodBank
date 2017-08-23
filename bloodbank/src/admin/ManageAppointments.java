@@ -50,24 +50,25 @@ public class ManageAppointments
 	// 	Donation Done
 	
 	// 1. update appointments status for donated
-	public int updateAppointments(String username)
+	public int updateAppointments(String username,String date)
 	{
-		int flag=0;
-		String query="update appointments set status=? where username=?";
+		int flag3=0;
+		String query="update appointments set status=? where username=? and date=?";
 		try
 		{
 			Connection con=DBInfo.getConn();	
 			PreparedStatement ps=con.prepareStatement(query);
 			ps.setString(1, "donated");
 			ps.setString(2, username);
-			flag=ps.executeUpdate();
+			ps.setString(3, date);
+			flag3=ps.executeUpdate();
 			con.close();
 		}
 		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
-		return flag;
+		return flag3;
 	}
 	
 	// 2. update(insert) stock
