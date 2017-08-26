@@ -23,7 +23,7 @@ function ValidateEmail() {
         return false;
     }
 }
-email.onkeyup = ValidateEmail;
+email.onchange = ValidateEmail;
 
 //sign-in
 $(".forgot-password-panel").hide();
@@ -46,4 +46,4 @@ function ValidateEmail2() {
         return false;
     }
 }
-email2.onkeyup = ValidateEmail2;
+email2.onchange = ValidateEmail2;

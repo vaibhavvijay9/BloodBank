@@ -50,7 +50,7 @@
                             <a class="center content-weight">Login to your account</a>
                         </div>
                         <div class="login-content">
-                            <input id="email1" type="email" name="email" placeholder="Enter Username" required>
+                            <input id="email1" type="email" name="email" placeholder="Enter Username" required autofocus>
                             <a id="errorMessage" class="right"></a>
                             <input type="password" name="password" placeholder="Enter Password" required>
                             <%

@@ -62,4 +62,4 @@ function validate() {
 
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
-email.onkeyup = ValidateEmail;
+email.onchange = ValidateEmail;
