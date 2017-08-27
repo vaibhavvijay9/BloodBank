@@ -1,0 +1,35 @@
+People's Blood Bank
+
+Instructions:
+1. Create a new folder "bloodbank" inside the Apache Tomcat "webapps" folder,and then paste the contents    of "WebRoot" folder in it.
+			OR
+1. Import "bloodbank" folder into the IDE(MyEclipse).
+2. Install the database using the given "peoplebloodbank.sql" file.
+3. System MUST be connected to the internet.
+
+Features:(or About Project)
+1. The whole project is made using 'Java Beans'(jsp).
+2. The design is made using 'Materialize css' framework.(NOT Bootstrap)
+3. It has response messages on screen as well as on email.
+4. Email validation.
+5. Password verification.
+6. It operates like a real bloodbank.
+7. It has the modules separately for:	1.bloodbank	2.user		3.admin
+8. Run the software for all cases,(wrong username,password)
+				  (register an already exists user)
+				  (fix appointment before 3 months of last donation),etc.
+9. It is responsive to some extent and I will work to make it fully responsive.
+10. Run the software to see more features.(IT HAS LESS DATA i.e. LESS RECORDS now)
+
+To Run(url): localhost:8080/bloodbank/
+
+Official email address(Project):- peoplebloodbank@gmail.com (Sir,please do not disclose the password.)
+
+Made By:
+Vaibhav Vijay 		   (vaibhavvijay9@gmail.com)
+Ritik Patni(Front End)	   (patniritik@gmail.com)
+
+For any help,please contact:
+Vaibhav Vijay
+(vaibhavvijay9@gmail.com)
+8104410870

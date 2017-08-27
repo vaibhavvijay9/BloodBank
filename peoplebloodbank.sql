@@ -54,7 +54,7 @@ CREATE TABLE `camps` (
 
 /*Data for the table `camps` */
 
-insert  into `camps`(`date`,`name`,`venue`) values ('2017-12-22','Volunteer Blood Donation Camp','Green Park ,Adarsh Nagar ,Jaipur'),('2017-08-15','Independence Day Blood Donation','Sachivalaya Vihar ,Community Hall ,Jaipur'),('2017-08-23','Rotary Club Blood Donation Camp','Mansarovar Community Hall,Jaipur'),('2017-09-08','Lioness Club Blood Donation Camp','JAI CLUB LAWN, C-SCHEME, JAIPUR'),('2017-08-10','Lions Club Blood Donation Camp','403, ROYAL ABODE, VIJAY PATH, JAIPUR');
+insert  into `camps`(`date`,`name`,`venue`) values ('2017-12-22','Volunteer Blood Donation Camp','Green Park ,Adarsh Nagar ,Jaipur'),('2017-08-15','Independence Day Blood Donation','Sachivalaya Vihar ,Community Hall ,Jaipur'),('2017-08-23','Rotary Club Blood Donation Camp','Mansarovar Community Hall,Jaipur'),('2017-09-08','Lioness Club Blood Donation Camp','JAI CLUB LAWN, C-SCHEME, JAIPUR'),('2017-08-13','Lions Club Blood Donation Camp','403, ROYAL ABODE, VIJAY PATH, JAIPUR');
 
 /*Table structure for table `donations` */
 
@@ -161,11 +161,11 @@ CREATE TABLE `stock` (
   `units` int(10) default NULL,
   `expiry_date` date default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
 
 /*Data for the table `stock` */
 
-insert  into `stock`(`id`,`bloodgroup`,`units`,`expiry_date`) values (1,'A+',0,'2050-08-01'),(2,'A-',0,'2050-08-01'),(3,'B+',0,'2050-08-01'),(4,'B-',0,'2050-08-01'),(5,'O+',0,'2050-08-01'),(6,'O-',0,'2050-08-01'),(7,'AB+',0,'2050-08-01'),(8,'AB-',0,'2050-08-01'),(10,'A+',5,'2017-07-31'),(12,'A+',9,'2017-10-30'),(13,'AB+',5,'2017-10-30'),(16,'O+',2,'2017-06-21'),(17,'AB-',3,'2017-10-30'),(18,'A+',6,'2017-11-25'),(19,'A-',6,'2017-08-02'),(22,'B+',5,'2017-08-11');
+insert  into `stock`(`id`,`bloodgroup`,`units`,`expiry_date`) values (1,'A+',0,'2050-08-01'),(2,'A-',0,'2050-08-01'),(3,'B+',0,'2050-08-01'),(4,'B-',0,'2050-08-01'),(5,'O+',0,'2050-08-01'),(6,'O-',0,'2050-08-01'),(7,'AB+',0,'2050-08-01'),(8,'AB-',0,'2050-08-01'),(10,'A+',5,'2017-08-31'),(12,'A+',9,'2017-10-30'),(13,'AB+',5,'2017-10-30'),(16,'O+',2,'2017-06-21'),(17,'AB-',3,'2017-10-30'),(18,'A+',6,'2017-11-25'),(19,'A-',6,'2017-08-02'),(22,'B+',5,'2017-08-11'),(23,'A-',3,'2017-11-07'),(24,'B-',6,'2017-11-07'),(25,'O+',4,'2017-11-07'),(26,'O-',2,'2017-11-07');
 
 /*Table structure for table `stories` */
 
