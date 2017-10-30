@@ -6,6 +6,7 @@ Instructions:
 1. Import "bloodbank" folder into the IDE(MyEclipse).
 2. Install the database using the given "peoplebloodbank.sql" file.
 3. System MUST be connected to the internet.
+4. Email.java--->initialize with your email address and password.
 
 Features:(or About Project)
 1. The whole project is made using 'Java Beans'(jsp).
