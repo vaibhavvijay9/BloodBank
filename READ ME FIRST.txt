@@ -5,12 +5,12 @@ Instructions:
 			OR
 1. Import "bloodbank" folder into the IDE(MyEclipse).
 2. Install the database using the given "peoplebloodbank.sql" file.
-3. System MUST be connected to the internet.
-4. Email.java--->initialize with your email address and password.
+3. Email.java ---> initialize with your email address and password.
+4. System MUST be connected to the internet.
 
-Features:(or About Project)
-1. The whole project is made using 'Java Beans'(jsp).
-2. The design is made using 'Materialize css' framework.(NOT Bootstrap)
+Features/About Project:
+1. The whole project is made using JSP and Java Beans.
+2. The design is made using 'Materialize CSS' framework.
 3. It has response messages on screen as well as on email.
 4. Email validation.
 5. Password verification.
@@ -24,8 +24,6 @@ Features:(or About Project)
 
 To Run(url): localhost:8080/bloodbank/
 
-Official email address(Project):- peoplebloodbank@gmail.com (Sir,please do not disclose the password.)
-
 Made By:
 Vaibhav Vijay 		   (vaibhavvijay9@gmail.com)
 Ritik Patni(Front End)	   (patniritik@gmail.com)
@@ -33,4 +31,3 @@ Ritik Patni(Front End)	   (patniritik@gmail.com)
 For any help,please contact:
 Vaibhav Vijay
 (vaibhavvijay9@gmail.com)
-8104410870
