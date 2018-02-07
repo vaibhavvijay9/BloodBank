@@ -1,5 +1,7 @@
 # BloodBank
 
+You must enter your email & password in "**bloodbank-->src-->bloodbank-->Email.java**" in order to run this project.
+
 ### 1. Home Screens
 ![Screenshot](screenshots/bloodbank.gif)
 
